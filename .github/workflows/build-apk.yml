@@ -17,11 +17,14 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
+      # The runner image ships an Android SDK already; android-actions/setup-android@v3
+      # is broken (it installs the long-removed 'tools' package), so use it directly.
       - name: Install SDK packages
-        run: sdkmanager "platforms;android-37" "build-tools;37.0.0"
+        run: |
+          SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f | sort -V | tail -1)
+          echo "Using $SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses > /dev/null
+          "$SDKMANAGER" "platforms;android-37" "build-tools;37.0.0"
 
       - name: Generate signing keystore
         run: |
