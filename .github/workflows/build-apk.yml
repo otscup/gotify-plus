@@ -11,20 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up JDK 21
+      # Mirrors the upstream release.yml: the runner image's preinstalled Android
+      # SDK is used as-is (no sdkmanager step — 'platforms;android-37' is not a
+      # published sdkmanager package name, and setup-android@v3 is broken).
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
-
-      # The runner image ships an Android SDK already; android-actions/setup-android@v3
-      # is broken (it installs the long-removed 'tools' package), so use it directly.
-      - name: Install SDK packages
-        run: |
-          SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f | sort -V | tail -1)
-          echo "Using $SDKMANAGER"
-          yes | "$SDKMANAGER" --licenses > /dev/null
-          "$SDKMANAGER" "platforms;android-37" "build-tools;37.0.0"
+          java-version: '17'
 
       - name: Generate signing keystore
         run: |
