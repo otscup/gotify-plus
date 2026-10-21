@@ -295,10 +295,11 @@ private fun HomeSummaryCard(
                         color = onContainer.copy(alpha = 0.78f)
                     )
                 }
+                val cdConnection = stringResource(R.string.cd_connection, connectionLabel)
                 Surface(
                     shape    = CircleShape,
                     color    = onContainer.copy(alpha = 0.10f),
-                    modifier = Modifier.semantics { contentDescription = stringResource(R.string.cd_connection, connectionLabel) }
+                    modifier = Modifier.semantics { contentDescription = cdConnection }
                 ) {
                     Row(
                         modifier              = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),

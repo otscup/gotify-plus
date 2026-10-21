@@ -16,7 +16,6 @@ import androidx.compose.ui.res.painterResource
 import com.gotify.client.R
 import androidx.annotation.StringRes
 import androidx.compose.ui.res.stringResource
-import com.gotify.client.R
 import com.gotify.client.ui.components.EmptyState
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel

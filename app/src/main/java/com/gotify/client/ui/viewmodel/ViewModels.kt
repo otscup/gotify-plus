@@ -17,10 +17,6 @@ import com.gotify.client.R
 import com.gotify.client.util.currentLocalized
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
-
-/** Resolve a user-facing error string in the language chosen in settings. */
-private fun localizedErr(context: Context, @StringRes id: Int, vararg args: Any): String =
-    context.currentLocalized().getString(id, *args)
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject
@@ -28,7 +24,9 @@ import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import com.gotify.client.BuildConfig
 import com.gotify.client.notification.GotifyNotificationManager
 
-
+/** Resolve a user-facing error string in the language chosen in settings. */
+private fun localizedErr(context: Context, @StringRes id: Int, vararg args: Any): String =
+    context.currentLocalized().getString(id, *args)
 
 @HiltViewModel
 class AppStartupViewModel @Inject constructor(
