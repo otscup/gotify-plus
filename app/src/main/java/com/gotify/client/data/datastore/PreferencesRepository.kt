@@ -1,1 +1,177 @@
-cGFja2FnZSBjb20uZ290aWZ5LmNsaWVudC5kYXRhLmRhdGFzdG9yZQoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkeC5kYXRhc3RvcmUuY29yZS5EYXRhU3RvcmUKaW1wb3J0IGFuZHJvaWR4LmRhdGFzdG9yZS5wcmVmZXJlbmNlcy5jb3JlLioKaW1wb3J0IGFuZHJvaWR4LmRhdGFzdG9yZS5wcmVmZXJlbmNlcy5wcmVmZXJlbmNlc0RhdGFTdG9yZQppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQudXRpbC5Mb2NhbGVTdG9yZQppbXBvcnQgZGFnZ2VyLmhpbHQuYW5kcm9pZC5xdWFsaWZpZXJzLkFwcGxpY2F0aW9uQ29udGV4dAppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuRmxvdwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuY2F0Y2gKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5mbG93Lm1hcAppbXBvcnQgamF2YS5pby5JT0V4Y2VwdGlvbgppbXBvcnQgamF2YXguaW5qZWN0LkluamVjdAppbXBvcnQgamF2YXguaW5qZWN0LlNpbmdsZXRvbgoKCnByaXZhdGUgdmFsIENvbnRleHQuZGF0YVN0b3JlOiBEYXRhU3RvcmU8UHJlZmVyZW5jZXM+IGJ5IHByZWZlcmVuY2VzRGF0YVN0b3JlKG5hbWUgPSAiZ290aWZ5X3ByZWZzIikKCgpkYXRhIGNsYXNzIFVzZXJQcmVmZXJlbmNlcygKICAgIHZhbCBub3RpZmljYXRpb25zRW5hYmxlZDogQm9vbGVhbiA9IHRydWUsCiAgICB2YWwgdmlicmF0aW9uRW5hYmxlZDogQm9vbGVhbiAgICAgPSB0cnVlLAogICAgdmFsIHRoZW1lTW9kZTogVGhlbWVNb2RlICAgICAgICAgID0gVGhlbWVNb2RlLlNZU1RFTSwKICAgIHZhbCBkeW5hbWljQ29sb3JFbmFibGVkOiBCb29sZWFuICA9IGZhbHNlLAogICAgdmFsIG1hcmtkb3duRW5hYmxlZDogQm9vbGVhbiAgICAgID0gdHJ1ZSwKICAgIHZhbCBrZWVwQWxpdmVFbmFibGVkOiBCb29sZWFuICAgICA9IHRydWUsCiAgICB2YWwgYWN0aXZlU2VydmVySWQ6IExvbmcgICAgICAgICAgPSAtMUwsCiAgICB2YWwgbGFzdFN5bmNUaW1lc3RhbXA6IExvbmcgICAgICAgPSAwTCwKICAgIHZhbCBxdWlldEhvdXJzRW5hYmxlZDogQm9vbGVhbiAgICA9IGZhbHNlLAogICAgdmFsIHF1aWV0U3RhcnRNaW51dGVzOiBJbnQgICAgICAgID0gMjIgKiA2MCwKICAgIHZhbCBxdWlldEVuZE1pbnV0ZXM6IEludCAgICAgICAgICA9IDcgKiA2MCwKICAgIHZhbCBhcHBMb2NrRW5hYmxlZDogQm9vbGVhbiAgICAgICA9IGZhbHNlLAogICAgdmFsIHNlcnZlckludGVudHNFbmFibGVkOiBCb29sZWFuID0gZmFsc2UsCiAgICB2YWwgYXBwTGFuZ3VhZ2U6IEFwcExhbmd1YWdlICAgICAgPSBBcHBMYW5ndWFnZS5TWVNURU0sCiAgICAvLyAic2VydmVySWQ6YXBwSWQiIC0+IG11dGVkLXVudGlsIGVwb2NoIG1pbGxpcyAoTG9uZy5NQVhfVkFMVUUgPSBtdXRlZCBpbmRlZmluaXRlbHkpCiAgICB2YWwgYXBwTXV0ZXM6IE1hcDxTdHJpbmcsIExvbmc+ICAgPSBlbXB0eU1hcCgpCikgewogICAgZnVuIGlzQXBwTXV0ZWQoc2VydmVySWQ6IExvbmcsIGFwcElkOiBJbnQsIG5vdzogTG9uZyA9IFN5c3RlbS5jdXJyZW50VGltZU1pbGxpcygpKTogQm9vbGVhbiA9CiAgICAgICAgKGFwcE11dGVzW211dGVLZXkoc2VydmVySWQsIGFwcElkKV0gPzogMEwpID4gbm93Cn0KCmVudW0gY2xhc3MgVGhlbWVNb2RlIHsgU1lTVEVNLCBMSUdIVCwgREFSSyB9CgplbnVtIGNsYXNzIEFwcExhbmd1YWdlIHsgU1lTVEVNLCBFTiwgWkggfQoKZnVuIG11dGVLZXkoc2VydmVySWQ6IExvbmcsIGFwcElkOiBJbnQpID0gIiRzZXJ2ZXJJZDokYXBwSWQiCgovKiogUXVpZXQgd2luZG93IG1heSB3cmFwIHBhc3QgbWlkbmlnaHQgKGUuZy4gMjI6MDAg4oaSIDA3OjAwKS4gc3RhcnQgPT0gZW5kIG1lYW5zIGRpc2FibGVkLiAqLwpmdW4gaXNJblF1aWV0SG91cnMobm93TWludXRlczogSW50LCBzdGFydE1pbnV0ZXM6IEludCwgZW5kTWludXRlczogSW50KTogQm9vbGVhbiA9IHdoZW4gewogICAgc3RhcnRNaW51dGVzID09IGVuZE1pbnV0ZXMgLT4gZmFsc2UKICAgIHN0YXJ0TWludXRlcyA8IGVuZE1pbnV0ZXMgIC0+IG5vd01pbnV0ZXMgaW4gc3RhcnRNaW51dGVzIHVudGlsIGVuZE1pbnV0ZXMKICAgIGVsc2UgICAgICAgICAgICAgICAgICAgICAgIC0+IG5vd01pbnV0ZXMgPj0gc3RhcnRNaW51dGVzIHx8IG5vd01pbnV0ZXMgPCBlbmRNaW51dGVzCn0KCkBTaW5nbGV0b24KY2xhc3MgUHJlZmVyZW5jZXNSZXBvc2l0b3J5IEBJbmplY3QgY29uc3RydWN0b3IoCiAgICBAcGFyYW06QXBwbGljYXRpb25Db250ZXh0IHByaXZhdGUgdmFsIGNvbnRleHQ6IENvbnRleHQKKSB7CgoKICAgIHByaXZhdGUgb2JqZWN0IEtleXMgewogICAgICAgIHZhbCBOT1RJRklDQVRJT05TX0VOQUJMRUQgID0gYm9vbGVhblByZWZlcmVuY2VzS2V5KCJub3RpZmljYXRpb25zX2VuYWJsZWQiKQogICAgICAgIHZhbCBWSUJSQVRJT05fRU5BQkxFRCAgICAgID0gYm9vbGVhblByZWZlcmVuY2VzS2V5KCJ2aWJyYXRpb25fZW5hYmxlZCIpCiAgICAgICAgLy8gTGVnYWN5IG9uL29mZiBzd2l0Y2g7IG9ubHkgcmVhZCBhcyBhIGZhbGxiYWNrIHdoZW4gVEhFTUVfTU9ERSB3YXMgbmV2ZXIgd3JpdHRlbi4KICAgICAgICB2YWwgREFSS19USEVNRV9FTkFCTEVEICAgICA9IGJvb2xlYW5QcmVmZXJlbmNlc0tleSgiZGFya190aGVtZV9lbmFibGVkIikKICAgICAgICB2YWwgVEhFTUVfTU9ERSAgICAgICAgICAgICA9IHN0cmluZ1ByZWZlcmVuY2VzS2V5KCJ0aGVtZV9tb2RlIikKICAgICAgICB2YWwgRFlOQU1JQ19DT0xPUl9FTkFCTEVEICA9IGJvb2xlYW5QcmVmZXJlbmNlc0tleSgiZHluYW1pY19jb2xvcl9lbmFibGVkIikKICAgICAgICB2YWwgTUFSS0RPV05fRU5BQkxFRCAgICAgICA9IGJvb2xlYW5QcmVmZXJlbmNlc0tleSgibWFya2Rvd25fZW5hYmxlZCIpCiAgICAgICAgdmFsIEtFRVBfQUxJVkVfRU5BQkxFRCAgICAgPSBib29sZWFuUHJlZmVyZW5jZXNLZXkoImtlZXBfYWxpdmVfZW5hYmxlZCIpCiAgICAgICAgdmFsIEFDVElWRV9TRVJWRVJfSUQgICAgICAgPSBsb25nUHJlZmVyZW5jZXNLZXkoImFjdGl2ZV9zZXJ2ZXJfaWQiKQogICAgICAgIHZhbCBMQVNUX1NZTkNfVElNRVNUQU1QICAgID0gbG9uZ1ByZWZlcmVuY2VzS2V5KCJsYXN0X3N5bmNfdGltZXN0YW1wIikKICAgICAgICB2YWwgUVVJRVRfSE9VUlNfRU5BQkxFRCAgICA9IGJvb2xlYW5QcmVmZXJlbmNlc0tleSgicXVpZXRfaG91cnNfZW5hYmxlZCIpCiAgICAgICAgdmFsIFFVSUVUX1NUQVJUICAgICAgICAgICAgPSBpbnRQcmVmZXJlbmNlc0tleSgicXVpZXRfc3RhcnRfbWludXRlcyIpCiAgICAgICAgdmFsIFFVSUVUX0VORCAgICAgICAgICAgICAgPSBpbnRQcmVmZXJlbmNlc0tleSgicXVpZXRfZW5kX21pbnV0ZXMiKQogICAgICAgIHZhbCBBUFBfTE9DS19FTkFCTEVEICAgICAgID0gYm9vbGVhblByZWZlcmVuY2VzS2V5KCJhcHBfbG9ja19lbmFibGVkIikKICAgICAgICB2YWwgQVBQX0xBTkdVQUdFICAgICAgICAgICA9IHN0cmluZ1ByZWZlcmVuY2VzS2V5KCJhcHBfbGFuZ3VhZ2UiKQogICAgICAgIHZhbCBTRVJWRVJfSU5URU5UU19FTkFCTEVEID0gYm9vbGVhblByZWZlcmVuY2VzS2V5KCJzZXJ2ZXJfaW50ZW50c19lbmFibGVkIikKICAgICAgICB2YWwgQVBQX01VVEVTICAgICAgICAgICAgICA9IHN0cmluZ1NldFByZWZlcmVuY2VzS2V5KCJhcHBfbXV0ZXMiKQogICAgfQoKCgogICAgdmFsIHVzZXJQcmVmZXJlbmNlczogRmxvdzxVc2VyUHJlZmVyZW5jZXM+ID0gY29udGV4dC5kYXRhU3RvcmUuZGF0YQogICAgICAgIC5jYXRjaCB7IGV4Y2VwdGlvbiAtPgogICAgICAgICAgICBpZiAoZXhjZXB0aW9uIGlzIElPRXhjZXB0aW9uKSBlbWl0KGVtcHR5UHJlZmVyZW5jZXMoKSkKICAgICAgICAgICAgZWxzZSB0aHJvdyBleGNlcHRpb24KICAgICAgICB9CiAgICAgICAgLm1hcCB7IHByZWZzIC0+CiAgICAgICAgICAgIFVzZXJQcmVmZXJlbmNlcygKICAgICAgICAgICAgICAgIG5vdGlmaWNhdGlvbnNFbmFibGVkID0gcHJlZnNbS2V5cy5OT1RJRklDQVRJT05TX0VOQUJMRURdID86IHRydWUsCiAgICAgICAgICAgICAgICB2aWJyYXRpb25FbmFibGVkICAgICA9IHByZWZzW0tleXMuVklCUkFUSU9OX0VOQUJMRURdICAgICA/OiB0cnVlLAogICAgICAgICAgICAgICAgdGhlbWVNb2RlICAgICAgICAgICAgPSBwcmVmc1tLZXlzLlRIRU1FX01PREVdPy5sZXQgeyBydW5DYXRjaGluZyB7IFRoZW1lTW9kZS52YWx1ZU9mKGl0KSB9LmdldE9yTnVsbCgpIH0KICAgICAgICAgICAgICAgICAgICA/OiBwcmVmc1tLZXlzLkRBUktfVEhFTUVfRU5BQkxFRF0/LmxldCB7IGlmIChpdCkgVGhlbWVNb2RlLkRBUksgZWxzZSBUaGVtZU1vZGUuTElHSFQgfQogICAgICAgICAgICAgICAgICAgID86IFRoZW1lTW9kZS5TWVNURU0sCiAgICAgICAgICAgICAgICBkeW5hbWljQ29sb3JFbmFibGVkICA9IHByZWZzW0tleXMuRFlOQU1JQ19DT0xPUl9FTkFCTEVEXSA/OiBmYWxzZSwKICAgICAgICAgICAgICAgIG1hcmtkb3duRW5hYmxlZCAgICAgID0gcHJlZnNbS2V5cy5NQVJLRE9XTl9FTkFCTEVEXSAgICAgID86IHRydWUsCiAgICAgICAgICAgICAgICBrZWVwQWxpdmVFbmFibGVkICAgICA9IHByZWZzW0tleXMuS0VFUF9BTElWRV9FTkFCTEVEXSAgICA/OiB0cnVlLAogICAgICAgICAgICAgICAgYWN0aXZlU2VydmVySWQgICAgICAgPSBwcmVmc1tLZXlzLkFDVElWRV9TRVJWRVJfSURdICAgICAgPzogLTFMLAogICAgICAgICAgICAgICAgbGFzdFN5bmNUaW1lc3RhbXAgICAgPSBwcmVmc1tLZXlzLkxBU1RfU1lOQ19USU1FU1RBTVBdICAgPzogMEwsCiAgICAgICAgICAgICAgICBxdWlldEhvdXJzRW5hYmxlZCAgICA9IHByZWZzW0tleXMuUVVJRVRfSE9VUlNfRU5BQkxFRF0gICA/OiBmYWxzZSwKICAgICAgICAgICAgICAgIHF1aWV0U3RhcnRNaW51dGVzICAgID0gcHJlZnNbS2V5cy5RVUlFVF9TVEFSVF0gICAgICAgICAgID86ICgyMiAqIDYwKSwKICAgICAgICAgICAgICAgIHF1aWV0RW5kTWludXRlcyAgICAgID0gcHJlZnNbS2V5cy5RVUlFVF9FTkRdICAgICAgICAgICAgID86ICg3ICogNjApLAogICAgICAgICAgICAgICAgYXBwTG9ja0VuYWJsZWQgICAgICAgPSBwcmVmc1tLZXlzLkFQUF9MT0NLX0VOQUJMRURdICAgICAgPzogZmFsc2UsCiAgICAgICAgICAgICAgICBhcHBMYW5ndWFnZSAgICAgICAgICA9IHByZWZzW0tleXMuQVBQX0xBTkdVQUdFXT8ubGV0IHsgcnVuQ2F0Y2hpbmcgeyBBcHBMYW5ndWFnZS52YWx1ZU9mKGl0KSB9LmdldE9yTnVsbCgpIH0KICAgICAgICAgICAgICAgICAgICA/OiBBcHBMYW5ndWFnZS5TWVNURU0sCiAgICAgICAgICAgICAgICBzZXJ2ZXJJbnRlbnRzRW5hYmxlZCA9IHByZWZzW0tleXMuU0VSVkVSX0lOVEVOVFNfRU5BQkxFRF0gPzogZmFsc2UsCiAgICAgICAgICAgICAgICBhcHBNdXRlcyAgICAgICAgICAgICA9IHBhcnNlTXV0ZXMocHJlZnNbS2V5cy5BUFBfTVVURVNdKQogICAgICAgICAgICApCiAgICAgICAgfQoKICAgIHByaXZhdGUgZnVuIHBhcnNlTXV0ZXMocmF3OiBTZXQ8U3RyaW5nPj8pOiBNYXA8U3RyaW5nLCBMb25nPiA9CiAgICAgICAgcmF3Lm9yRW1wdHkoKS5tYXBOb3ROdWxsIHsgZW50cnkgLT4KICAgICAgICAgICAgdmFsIGtleSA9IGVudHJ5LnN1YnN0cmluZ0JlZm9yZUxhc3QoJzonLCAiIikKICAgICAgICAgICAgdmFsIHVudGlsID0gZW50cnkuc3Vic3RyaW5nQWZ0ZXJMYXN0KCc6JykudG9Mb25nT3JOdWxsKCkKICAgICAgICAgICAgaWYgKGtleS5pc0VtcHR5KCkgfHwgdW50aWwgPT0gbnVsbCkgbnVsbCBlbHNlIGtleSB0byB1bnRpbAogICAgICAgIH0udG9NYXAoKQoKICAgIC8qKiB1bnRpbE1pbGxpcyA9IG51bGwgdW5tdXRlczsgTG9uZy5NQVhfVkFMVUUgbXV0ZXMgdW50aWwgdHVybmVkIG9mZi4gRXhwaXJlZCBlbnRyaWVzIGFyZSBkcm9wcGVkLiAqLwogICAgc3VzcGVuZCBmdW4gc2V0QXBwTXV0ZShzZXJ2ZXJJZDogTG9uZywgYXBwSWQ6IEludCwgdW50aWxNaWxsaXM6IExvbmc/KSA9CiAgICAgICAgY29udGV4dC5kYXRhU3RvcmUuZWRpdCB7IHByZWZzIC0+CiAgICAgICAgICAgIHZhbCBub3cgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKQogICAgICAgICAgICB2YWwgbXV0ZXMgPSBwYXJzZU11dGVzKHByZWZzW0tleXMuQVBQX01VVEVTXSkuZmlsdGVyVmFsdWVzIHsgaXQgPiBub3cgfS50b011dGFibGVNYXAoKQogICAgICAgICAgICBpZiAodW50aWxNaWxsaXMgPT0gbnVsbCkgbXV0ZXMucmVtb3ZlKG11dGVLZXkoc2VydmVySWQsIGFwcElkKSkKICAgICAgICAgICAgZWxzZSBtdXRlc1ttdXRlS2V5KHNlcnZlcklkLCBhcHBJZCldID0gdW50aWxNaWxsaXMKICAgICAgICAgICAgcHJlZnNbS2V5cy5BUFBfTVVURVNdID0gbXV0ZXMubWFwIHsgKGssIHYpIC0+ICIkazokdiIgfS50b1NldCgpCiAgICAgICAgfQoKICAgIHN1c3BlbmQgZnVuIHNldFF1aWV0SG91cnNFbmFibGVkKGVuYWJsZWQ6IEJvb2xlYW4pID0KICAgICAgICBjb250ZXh0LmRhdGFTdG9yZS5lZGl0IHsgaXRbS2V5cy5RVUlFVF9IT1VSU19FTkFCTEVEXSA9IGVuYWJsZWQgfQoKICAgIHN1c3BlbmQgZnVuIHNldFF1aWV0SG91cnMoc3RhcnRNaW51dGVzOiBJbnQsIGVuZE1pbnV0ZXM6IEludCkgPQogICAgICAgIGNvbnRleHQuZGF0YVN0b3JlLmVkaXQgewogICAgICAgICAgICBpdFtLZXlzLlFVSUVUX1NUQVJUXSA9IHN0YXJ0TWludXRlcwogICAgICAgICAgICBpdFtLZXlzLlFVSUVUX0VORF0gPSBlbmRNaW51dGVzCiAgICAgICAgfQoKICAgIHN1c3BlbmQgZnVuIHNldEFwcExvY2tFbmFibGVkKGVuYWJsZWQ6IEJvb2xlYW4pID0KICAgICAgICBjb250ZXh0LmRhdGFTdG9yZS5lZGl0IHsgaXRbS2V5cy5BUFBfTE9DS19FTkFCTEVEXSA9IGVuYWJsZWQgfQoKICAgIHN1c3BlbmQgZnVuIHNldEFwcExhbmd1YWdlKGxhbmd1YWdlOiBBcHBMYW5ndWFnZSkgewogICAgICAgIC8vIE1pcnJvciBzeW5jaHJvbm91c2x5IHNvIGF0dGFjaEJhc2VDb250ZXh0IC8gc2VydmljZXMgY2FuIHJlYWQgaXQgd2l0aG91dCBhIGNvcm91dGluZS4KICAgICAgICBMb2NhbGVTdG9yZS53cml0ZShjb250ZXh0LCBsYW5ndWFnZSkKICAgICAgICBjb250ZXh0LmRhdGFTdG9yZS5lZGl0IHsgaXRbS2V5cy5BUFBfTEFOR1VBR0VdID0gbGFuZ3VhZ2UubmFtZSB9CiAgICB9CgogICAgc3VzcGVuZCBmdW4gc2V0U2VydmVySW50ZW50c0VuYWJsZWQoZW5hYmxlZDogQm9vbGVhbikgPQogICAgICAgIGNvbnRleHQuZGF0YVN0b3JlLmVkaXQgeyBpdFtLZXlzLlNFUlZFUl9JTlRFTlRTX0VOQUJMRURdID0gZW5hYmxlZCB9CgoKCiAgICBzdXNwZW5kIGZ1biBzZXROb3RpZmljYXRpb25zRW5hYmxlZChlbmFibGVkOiBCb29sZWFuKSA9CiAgICAgICAgY29udGV4dC5kYXRhU3RvcmUuZWRpdCB7IGl0W0tleXMuTk9USUZJQ0FUSU9OU19FTkFCTEVEXSA9IGVuYWJsZWQgfQoKICAgIHN1c3BlbmQgZnVuIHNldFZpYnJhdGlvbkVuYWJsZWQoZW5hYmxlZDogQm9vbGVhbikgPQogICAgICAgIGNvbnRleHQuZGF0YVN0b3JlLmVkaXQgeyBpdFtLZXlzLlZJQlJBVElPTl9FTkFCTEVEXSA9IGVuYWJsZWQgfQoKICAgIHN1c3BlbmQgZnVuIHNldFRoZW1lTW9kZShtb2RlOiBUaGVtZU1vZGUpID0KICAgICAgICBjb250ZXh0LmRhdGFTdG9yZS5lZGl0IHsgaXRbS2V5cy5USEVNRV9NT0RFXSA9IG1vZGUubmFtZSB9CgogICAgc3VzcGVuZCBmdW4gc2V0RHluYW1pY0NvbG9yRW5hYmxlZChlbmFibGVkOiBCb29sZWFuKSA9CiAgICAgICAgY29udGV4dC5kYXRhU3RvcmUuZWRpdCB7IGl0W0tleXMuRFlOQU1JQ19DT0xPUl9FTkFCTEVEXSA9IGVuYWJsZWQgfQoKICAgIHN1c3BlbmQgZnVuIHNldE1hcmtkb3duRW5hYmxlZChlbmFibGVkOiBCb29sZWFuKSA9CiAgICAgICAgY29udGV4dC5kYXRhU3RvcmUuZWRpdCB7IGl0W0tleXMuTUFSS0RPV05fRU5BQkxFRF0gPSBlbmFibGVkIH0KCiAgICBzdXNwZW5kIGZ1biBzZXRLZWVwQWxpdmVFbmFibGVkKGVuYWJsZWQ6IEJvb2xlYW4pID0KICAgICAgICBjb250ZXh0LmRhdGFTdG9yZS5lZGl0IHsgaXRbS2V5cy5LRUVQX0FMSVZFX0VOQUJMRURdID0gZW5hYmxlZCB9CgogICAgc3VzcGVuZCBmdW4gc2V0QWN0aXZlU2VydmVySWQoaWQ6IExvbmcpID0KICAgICAgICBjb250ZXh0LmRhdGFTdG9yZS5lZGl0IHsgaXRbS2V5cy5BQ1RJVkVfU0VSVkVSX0lEXSA9IGlkIH0KCiAgICBzdXNwZW5kIGZ1biBzZXRMYXN0U3luY1RpbWVzdGFtcCh0czogTG9uZykgPQogICAgICAgIGNvbnRleHQuZGF0YVN0b3JlLmVkaXQgeyBpdFtLZXlzLkxBU1RfU1lOQ19USU1FU1RBTVBdID0gdHMgfQoKICAgIAogICAgc3VzcGVuZCBmdW4gY2xlYXJBbGwoKSA9IGNvbnRleHQuZGF0YVN0b3JlLmVkaXQgeyBpdC5jbGVhcigpIH0KfQo=
+package com.gotify.client.data.datastore
+
+import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.*
+import androidx.datastore.preferences.preferencesDataStore
+import com.gotify.client.util.LocaleStore
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.map
+import java.io.IOException
+import javax.inject.Inject
+import javax.inject.Singleton
+
+
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "gotify_prefs")
+
+
+data class UserPreferences(
+    val notificationsEnabled: Boolean = true,
+    val vibrationEnabled: Boolean     = true,
+    val themeMode: ThemeMode          = ThemeMode.SYSTEM,
+    val dynamicColorEnabled: Boolean  = false,
+    val markdownEnabled: Boolean      = true,
+    val keepAliveEnabled: Boolean     = true,
+    val activeServerId: Long          = -1L,
+    val lastSyncTimestamp: Long       = 0L,
+    val quietHoursEnabled: Boolean    = false,
+    val quietStartMinutes: Int        = 22 * 60,
+    val quietEndMinutes: Int          = 7 * 60,
+    val appLockEnabled: Boolean       = false,
+    val serverIntentsEnabled: Boolean = false,
+    val appLanguage: AppLanguage      = AppLanguage.SYSTEM,
+    // "serverId:appId" -> muted-until epoch millis (Long.MAX_VALUE = muted indefinitely)
+    val appMutes: Map<String, Long>   = emptyMap()
+) {
+    fun isAppMuted(serverId: Long, appId: Int, now: Long = System.currentTimeMillis()): Boolean =
+        (appMutes[muteKey(serverId, appId)] ?: 0L) > now
+}
+
+enum class ThemeMode { SYSTEM, LIGHT, DARK }
+
+enum class AppLanguage { SYSTEM, EN, ZH }
+
+fun muteKey(serverId: Long, appId: Int) = "$serverId:$appId"
+
+/** Quiet window may wrap past midnight (e.g. 22:00 → 07:00). start == end means disabled. */
+fun isInQuietHours(nowMinutes: Int, startMinutes: Int, endMinutes: Int): Boolean = when {
+    startMinutes == endMinutes -> false
+    startMinutes < endMinutes  -> nowMinutes in startMinutes until endMinutes
+    else                       -> nowMinutes >= startMinutes || nowMinutes < endMinutes
+}
+
+@Singleton
+class PreferencesRepository @Inject constructor(
+    @param:ApplicationContext private val context: Context
+) {
+
+
+    private object Keys {
+        val NOTIFICATIONS_ENABLED  = booleanPreferencesKey("notifications_enabled")
+        val VIBRATION_ENABLED      = booleanPreferencesKey("vibration_enabled")
+        // Legacy on/off switch; only read as a fallback when THEME_MODE was never written.
+        val DARK_THEME_ENABLED     = booleanPreferencesKey("dark_theme_enabled")
+        val THEME_MODE             = stringPreferencesKey("theme_mode")
+        val DYNAMIC_COLOR_ENABLED  = booleanPreferencesKey("dynamic_color_enabled")
+        val MARKDOWN_ENABLED       = booleanPreferencesKey("markdown_enabled")
+        val KEEP_ALIVE_ENABLED     = booleanPreferencesKey("keep_alive_enabled")
+        val ACTIVE_SERVER_ID       = longPreferencesKey("active_server_id")
+        val LAST_SYNC_TIMESTAMP    = longPreferencesKey("last_sync_timestamp")
+        val QUIET_HOURS_ENABLED    = booleanPreferencesKey("quiet_hours_enabled")
+        val QUIET_START            = intPreferencesKey("quiet_start_minutes")
+        val QUIET_END              = intPreferencesKey("quiet_end_minutes")
+        val APP_LOCK_ENABLED       = booleanPreferencesKey("app_lock_enabled")
+        val APP_LANGUAGE           = stringPreferencesKey("app_language")
+        val SERVER_INTENTS_ENABLED = booleanPreferencesKey("server_intents_enabled")
+        val APP_MUTES              = stringSetPreferencesKey("app_mutes")
+    }
+
+
+
+    val userPreferences: Flow<UserPreferences> = context.dataStore.data
+        .catch { exception ->
+            if (exception is IOException) emit(emptyPreferences())
+            else throw exception
+        }
+        .map { prefs ->
+            UserPreferences(
+                notificationsEnabled = prefs[Keys.NOTIFICATIONS_ENABLED] ?: true,
+                vibrationEnabled     = prefs[Keys.VIBRATION_ENABLED]     ?: true,
+                themeMode            = prefs[Keys.THEME_MODE]?.let { runCatching { ThemeMode.valueOf(it) }.getOrNull() }
+                    ?: prefs[Keys.DARK_THEME_ENABLED]?.let { if (it) ThemeMode.DARK else ThemeMode.LIGHT }
+                    ?: ThemeMode.SYSTEM,
+                dynamicColorEnabled  = prefs[Keys.DYNAMIC_COLOR_ENABLED] ?: false,
+                markdownEnabled      = prefs[Keys.MARKDOWN_ENABLED]      ?: true,
+                keepAliveEnabled     = prefs[Keys.KEEP_ALIVE_ENABLED]    ?: true,
+                activeServerId       = prefs[Keys.ACTIVE_SERVER_ID]      ?: -1L,
+                lastSyncTimestamp    = prefs[Keys.LAST_SYNC_TIMESTAMP]   ?: 0L,
+                quietHoursEnabled    = prefs[Keys.QUIET_HOURS_ENABLED]   ?: false,
+                quietStartMinutes    = prefs[Keys.QUIET_START]           ?: (22 * 60),
+                quietEndMinutes      = prefs[Keys.QUIET_END]             ?: (7 * 60),
+                appLockEnabled       = prefs[Keys.APP_LOCK_ENABLED]      ?: false,
+                appLanguage          = prefs[Keys.APP_LANGUAGE]?.let { runCatching { AppLanguage.valueOf(it) }.getOrNull() }
+                    ?: AppLanguage.SYSTEM,
+                serverIntentsEnabled = prefs[Keys.SERVER_INTENTS_ENABLED] ?: false,
+                appMutes             = parseMutes(prefs[Keys.APP_MUTES])
+            )
+        }
+
+    private fun parseMutes(raw: Set<String>?): Map<String, Long> =
+        raw.orEmpty().mapNotNull { entry ->
+            val key = entry.substringBeforeLast(':', "")
+            val until = entry.substringAfterLast(':').toLongOrNull()
+            if (key.isEmpty() || until == null) null else key to until
+        }.toMap()
+
+    /** untilMillis = null unmutes; Long.MAX_VALUE mutes until turned off. Expired entries are dropped. */
+    suspend fun setAppMute(serverId: Long, appId: Int, untilMillis: Long?) =
+        context.dataStore.edit { prefs ->
+            val now = System.currentTimeMillis()
+            val mutes = parseMutes(prefs[Keys.APP_MUTES]).filterValues { it > now }.toMutableMap()
+            if (untilMillis == null) mutes.remove(muteKey(serverId, appId))
+            else mutes[muteKey(serverId, appId)] = untilMillis
+            prefs[Keys.APP_MUTES] = mutes.map { (k, v) -> "$k:$v" }.toSet()
+        }
+
+    suspend fun setQuietHoursEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.QUIET_HOURS_ENABLED] = enabled }
+
+    suspend fun setQuietHours(startMinutes: Int, endMinutes: Int) =
+        context.dataStore.edit {
+            it[Keys.QUIET_START] = startMinutes
+            it[Keys.QUIET_END] = endMinutes
+        }
+
+    suspend fun setAppLockEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.APP_LOCK_ENABLED] = enabled }
+
+    suspend fun setAppLanguage(language: AppLanguage) {
+        // Mirror synchronously so attachBaseContext / services can read it without a coroutine.
+        LocaleStore.write(context, language)
+        context.dataStore.edit { it[Keys.APP_LANGUAGE] = language.name }
+    }
+
+    suspend fun setServerIntentsEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.SERVER_INTENTS_ENABLED] = enabled }
+
+
+
+    suspend fun setNotificationsEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.NOTIFICATIONS_ENABLED] = enabled }
+
+    suspend fun setVibrationEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.VIBRATION_ENABLED] = enabled }
+
+    suspend fun setThemeMode(mode: ThemeMode) =
+        context.dataStore.edit { it[Keys.THEME_MODE] = mode.name }
+
+    suspend fun setDynamicColorEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.DYNAMIC_COLOR_ENABLED] = enabled }
+
+    suspend fun setMarkdownEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.MARKDOWN_ENABLED] = enabled }
+
+    suspend fun setKeepAliveEnabled(enabled: Boolean) =
+        context.dataStore.edit { it[Keys.KEEP_ALIVE_ENABLED] = enabled }
+
+    suspend fun setActiveServerId(id: Long) =
+        context.dataStore.edit { it[Keys.ACTIVE_SERVER_ID] = id }
+
+    suspend fun setLastSyncTimestamp(ts: Long) =
+        context.dataStore.edit { it[Keys.LAST_SYNC_TIMESTAMP] = ts }
+
+    
+    suspend fun clearAll() = context.dataStore.edit { it.clear() }
+}

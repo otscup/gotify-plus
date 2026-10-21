@@ -1,1 +1,68 @@
-cGFja2FnZSBjb20uZ290aWZ5LmNsaWVudAoKaW1wb3J0IGFuZHJvaWQuYXBwLkFwcGxpY2F0aW9uCmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuQ29udGV4dAppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQuZGF0YS5hcGkuR290aWZ5V2ViU29ja2V0TWFuYWdlcgppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQudXRpbC5jdXJyZW50TG9jYWxpemVkCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC5kYXRhLmRiLk1lc3NhZ2VEYW8KaW1wb3J0IGNvbS5nb3RpZnkuY2xpZW50LmRhdGEubW9kZWwuU3RyZWFtU3RhdGUKaW1wb3J0IGNvbS5nb3RpZnkuY2xpZW50LmRhdGEucmVwb3NpdG9yeS5TZXJ2ZXJNYW5hZ2VyCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC5zZXJ2aWNlLk1lc3NhZ2VJbmdlc3RvcgppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQud2lkZ2V0LlVucmVhZFdpZGdldFByb3ZpZGVyCmltcG9ydCBkYWdnZXIuaGlsdC5hbmRyb2lkLkhpbHRBbmRyb2lkQXBwCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuQ29yb3V0aW5lU2NvcGUKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5EaXNwYXRjaGVycwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLkV4cGVyaW1lbnRhbENvcm91dGluZXNBcGkKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5TdXBlcnZpc29ySm9iCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5jb21iaW5lCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5kaXN0aW5jdFVudGlsQ2hhbmdlZAppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuZmxhdE1hcExhdGVzdAppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuZmxvd09mCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5tYXAKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKaW1wb3J0IGphdmF4LmluamVjdC5JbmplY3QKCkBIaWx0QW5kcm9pZEFwcApjbGFzcyBHb3RpZnlBcHBsaWNhdGlvbiA6IEFwcGxpY2F0aW9uKCkgewoKICAgIG92ZXJyaWRlIGZ1biBhdHRhY2hCYXNlQ29udGV4dChiYXNlOiBDb250ZXh0KSB7CiAgICAgICAgc3VwZXIuYXR0YWNoQmFzZUNvbnRleHQoYmFzZS5jdXJyZW50TG9jYWxpemVkKCkpCiAgICB9CgogICAgQEluamVjdCBsYXRlaW5pdCB2YXIgd2ViU29ja2V0TWFuYWdlcjogR290aWZ5V2ViU29ja2V0TWFuYWdlcgogICAgQEluamVjdCBsYXRlaW5pdCB2YXIgc2VydmVyTWFuYWdlcjogU2VydmVyTWFuYWdlcgogICAgQEluamVjdCBsYXRlaW5pdCB2YXIgaW5nZXN0b3I6IE1lc3NhZ2VJbmdlc3RvcgogICAgQEluamVjdCBsYXRlaW5pdCB2YXIgbWVzc2FnZURhbzogTWVzc2FnZURhbwoKICAgIHByaXZhdGUgdmFsIGFwcFNjb3BlID0gQ29yb3V0aW5lU2NvcGUoU3VwZXJ2aXNvckpvYigpICsgRGlzcGF0Y2hlcnMuSU8pCgogICAgQE9wdEluKEV4cGVyaW1lbnRhbENvcm91dGluZXNBcGk6OmNsYXNzKQogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlKCkgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKCkKCiAgICAgICAgLy8gVGhlIG9uZSBwbGFjZSBsaXZlIG1lc3NhZ2VzIGFyZSBzdG9yZWQgYW5kIG5vdGlmaWVkLCB3aGV0aGVyIG9yIG5vdCB0aGUgZm9yZWdyb3VuZCBzZXJ2aWNlIHJ1bnMuCiAgICAgICAgYXBwU2NvcGUubGF1bmNoIHsKICAgICAgICAgICAgd2ViU29ja2V0TWFuYWdlci5zdHJlYW1TdGF0ZS5jb2xsZWN0IHsgc3RhdGUgLT4KICAgICAgICAgICAgICAgIHZhbCBzZXJ2ZXJJZCA9IHNlcnZlck1hbmFnZXIuYWN0aXZlU2VydmVyLnZhbHVlPy5pZAogICAgICAgICAgICAgICAgaWYgKHN0YXRlIGlzIFN0cmVhbVN0YXRlLk1lc3NhZ2UgJiYgc2VydmVySWQgIT0gbnVsbCkgewogICAgICAgICAgICAgICAgICAgIHJ1bkNhdGNoaW5nIHsgaW5nZXN0b3IuaW5nZXN0KHNlcnZlcklkLCBzdGF0ZS5tZXNzYWdlKSB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIGFwcFNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgIHNlcnZlck1hbmFnZXIuYWN0aXZlU2VydmVyCiAgICAgICAgICAgICAgICAubWFwIHsgaXQ/LmlkIH0KICAgICAgICAgICAgICAgIC5kaXN0aW5jdFVudGlsQ2hhbmdlZCgpCiAgICAgICAgICAgICAgICAuZmxhdE1hcExhdGVzdCB7IHNlcnZlcklkIC0+CiAgICAgICAgICAgICAgICAgICAgaWYgKHNlcnZlcklkID09IG51bGwpIGZsb3dPZigwIHRvIG51bGwpCiAgICAgICAgICAgICAgICAgICAgZWxzZSBjb21iaW5lKAogICAgICAgICAgICAgICAgICAgICAgICBtZXNzYWdlRGFvLmdldFVucmVhZENvdW50KHNlcnZlcklkKSwKICAgICAgICAgICAgICAgICAgICAgICAgbWVzc2FnZURhby5vYnNlcnZlTGF0ZXN0TWVzc2FnZShzZXJ2ZXJJZCkKICAgICAgICAgICAgICAgICAgICApIHsgdW5yZWFkLCBsYXRlc3QgLT4gdW5yZWFkIHRvIChsYXRlc3Q/LnRpdGxlPy5pZkJsYW5rIHsgbnVsbCB9ID86IGxhdGVzdD8ubWVzc2FnZSkgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgLmRpc3RpbmN0VW50aWxDaGFuZ2VkKCkKICAgICAgICAgICAgICAgIC5jb2xsZWN0IHsgKHVucmVhZCwgbGF0ZXN0KSAtPiBVbnJlYWRXaWRnZXRQcm92aWRlci5wdXNoKHRoaXNAR290aWZ5QXBwbGljYXRpb24sIHVucmVhZCwgbGF0ZXN0KSB9CiAgICAgICAgfQogICAgfQp9Cg==
+package com.gotify.client
+
+import android.app.Application
+import android.content.Context
+import com.gotify.client.data.api.GotifyWebSocketManager
+import com.gotify.client.util.currentLocalized
+import com.gotify.client.data.db.MessageDao
+import com.gotify.client.data.model.StreamState
+import com.gotify.client.data.repository.ServerManager
+import com.gotify.client.service.MessageIngestor
+import com.gotify.client.widget.UnreadWidgetProvider
+import dagger.hilt.android.HiltAndroidApp
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@HiltAndroidApp
+class GotifyApplication : Application() {
+
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(base.currentLocalized())
+    }
+
+    @Inject lateinit var webSocketManager: GotifyWebSocketManager
+    @Inject lateinit var serverManager: ServerManager
+    @Inject lateinit var ingestor: MessageIngestor
+    @Inject lateinit var messageDao: MessageDao
+
+    private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    @OptIn(ExperimentalCoroutinesApi::class)
+    override fun onCreate() {
+        super.onCreate()
+
+        // The one place live messages are stored and notified, whether or not the foreground service runs.
+        appScope.launch {
+            webSocketManager.streamState.collect { state ->
+                val serverId = serverManager.activeServer.value?.id
+                if (state is StreamState.Message && serverId != null) {
+                    runCatching { ingestor.ingest(serverId, state.message) }
+                }
+            }
+        }
+
+        appScope.launch {
+            serverManager.activeServer
+                .map { it?.id }
+                .distinctUntilChanged()
+                .flatMapLatest { serverId ->
+                    if (serverId == null) flowOf(0 to null)
+                    else combine(
+                        messageDao.getUnreadCount(serverId),
+                        messageDao.observeLatestMessage(serverId)
+                    ) { unread, latest -> unread to (latest?.title?.ifBlank { null } ?: latest?.message) }
+                }
+                .distinctUntilChanged()
+                .collect { (unread, latest) -> UnreadWidgetProvider.push(this@GotifyApplication, unread, latest) }
+        }
+    }
+}

@@ -1,1 +1,66 @@
-cGFja2FnZSBjb20uZ290aWZ5LmNsaWVudC53aWRnZXQKCmltcG9ydCBhbmRyb2lkLmFwcC5QZW5kaW5nSW50ZW50CmltcG9ydCBhbmRyb2lkLmFwcHdpZGdldC5BcHBXaWRnZXRNYW5hZ2VyCmltcG9ydCBhbmRyb2lkLmFwcHdpZGdldC5BcHBXaWRnZXRQcm92aWRlcgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbXBvbmVudE5hbWUKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLndpZGdldC5SZW1vdGVWaWV3cwppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQuUgppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQuZGF0YS5kYXRhc3RvcmUuUHJlZmVyZW5jZXNSZXBvc2l0b3J5CmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC51dGlsLmN1cnJlbnRMb2NhbGl6ZWQKaW1wb3J0IGNvbS5nb3RpZnkuY2xpZW50LmRhdGEuZGIuTWVzc2FnZURhbwppbXBvcnQgZGFnZ2VyLmhpbHQuYW5kcm9pZC5BbmRyb2lkRW50cnlQb2ludAppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLkNvcm91dGluZVNjb3BlCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuRGlzcGF0Y2hlcnMKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5mbG93LmZpcnN0CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCmltcG9ydCBqYXZheC5pbmplY3QuSW5qZWN0CgpAQW5kcm9pZEVudHJ5UG9pbnQKY2xhc3MgVW5yZWFkV2lkZ2V0UHJvdmlkZXIgOiBBcHBXaWRnZXRQcm92aWRlcigpIHsKCiAgICBASW5qZWN0IGxhdGVpbml0IHZhciBwcmVmczogUHJlZmVyZW5jZXNSZXBvc2l0b3J5CiAgICBASW5qZWN0IGxhdGVpbml0IHZhciBtZXNzYWdlRGFvOiBNZXNzYWdlRGFvCgogICAgb3ZlcnJpZGUgZnVuIG9uVXBkYXRlKGNvbnRleHQ6IENvbnRleHQsIG1hbmFnZXI6IEFwcFdpZGdldE1hbmFnZXIsIGlkczogSW50QXJyYXkpIHsKICAgICAgICB2YWwgcGVuZGluZyA9IGdvQXN5bmMoKQogICAgICAgIENvcm91dGluZVNjb3BlKERpc3BhdGNoZXJzLklPKS5sYXVuY2ggewogICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgdmFsIHNlcnZlcklkID0gcHJlZnMudXNlclByZWZlcmVuY2VzLmZpcnN0KCkuYWN0aXZlU2VydmVySWQKICAgICAgICAgICAgICAgIHZhbCB1bnJlYWQgPSBpZiAoc2VydmVySWQgPiAwKSBtZXNzYWdlRGFvLmdldFVucmVhZENvdW50KHNlcnZlcklkKS5maXJzdCgpIGVsc2UgMAogICAgICAgICAgICAgICAgdmFsIGxhdGVzdCA9IGlmIChzZXJ2ZXJJZCA+IDApIG1lc3NhZ2VEYW8ub2JzZXJ2ZUxhdGVzdE1lc3NhZ2Uoc2VydmVySWQpLmZpcnN0KCkgZWxzZSBudWxsCiAgICAgICAgICAgICAgICBwdXNoKGNvbnRleHQsIHVucmVhZCwgbGF0ZXN0Py50aXRsZT8uaWZCbGFuayB7IG51bGwgfSA/OiBsYXRlc3Q/Lm1lc3NhZ2UpCiAgICAgICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgICAgICBwZW5kaW5nLmZpbmlzaCgpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgY29tcGFuaW9uIG9iamVjdCB7CiAgICAgICAgZnVuIHB1c2goY29udGV4dDogQ29udGV4dCwgdW5yZWFkOiBJbnQsIGxhdGVzdDogU3RyaW5nPykgewogICAgICAgICAgICB2YWwgbWFuYWdlciA9IEFwcFdpZGdldE1hbmFnZXIuZ2V0SW5zdGFuY2UoY29udGV4dCkKICAgICAgICAgICAgdmFsIGlkcyA9IG1hbmFnZXIuZ2V0QXBwV2lkZ2V0SWRzKENvbXBvbmVudE5hbWUoY29udGV4dCwgVW5yZWFkV2lkZ2V0UHJvdmlkZXI6OmNsYXNzLmphdmEpKQogICAgICAgICAgICBpZiAoaWRzLmlzRW1wdHkoKSkgcmV0dXJuCgogICAgICAgICAgICB2YWwgbGF1bmNoID0gY29udGV4dC5wYWNrYWdlTWFuYWdlci5nZXRMYXVuY2hJbnRlbnRGb3JQYWNrYWdlKGNvbnRleHQucGFja2FnZU5hbWUpCiAgICAgICAgICAgICAgICA/LmFkZEZsYWdzKEludGVudC5GTEFHX0FDVElWSVRZX1NJTkdMRV9UT1ApID86IHJldHVybgogICAgICAgICAgICB2YWwgdGFwID0gUGVuZGluZ0ludGVudC5nZXRBY3Rpdml0eSgKICAgICAgICAgICAgICAgIGNvbnRleHQsIDAsIGxhdW5jaCwKICAgICAgICAgICAgICAgIFBlbmRpbmdJbnRlbnQuRkxBR19VUERBVEVfQ1VSUkVOVCBvciBQZW5kaW5nSW50ZW50LkZMQUdfSU1NVVRBQkxFCiAgICAgICAgICAgICkKICAgICAgICAgICAgdmFsIGxjdHggPSBjb250ZXh0LmN1cnJlbnRMb2NhbGl6ZWQoKQogICAgICAgICAgICB2YWwgdmlld3MgPSBSZW1vdGVWaWV3cyhjb250ZXh0LnBhY2thZ2VOYW1lLCBSLmxheW91dC53aWRnZXRfdW5yZWFkKS5hcHBseSB7CiAgICAgICAgICAgICAgICBzZXRUZXh0Vmlld1RleHQoUi5pZC53aWRnZXRfY291bnQsIHVucmVhZC50b1N0cmluZygpKQogICAgICAgICAgICAgICAgc2V0VGV4dFZpZXdUZXh0KAogICAgICAgICAgICAgICAgICAgIFIuaWQud2lkZ2V0X2xhYmVsLAogICAgICAgICAgICAgICAgICAgIGxjdHgucmVzb3VyY2VzLmdldFF1YW50aXR5U3RyaW5nKFIucGx1cmFscy53aWRnZXRfdW5yZWFkLCB1bnJlYWQpCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICBzZXRUZXh0Vmlld1RleHQoUi5pZC53aWRnZXRfbGF0ZXN0LCBsYXRlc3QgPzogbGN0eC5nZXRTdHJpbmcoUi5zdHJpbmcud2lkZ2V0X25vX21lc3NhZ2VzKSkKICAgICAgICAgICAgICAgIHNldE9uQ2xpY2tQZW5kaW5nSW50ZW50KFIuaWQud2lkZ2V0X3Jvb3QsIHRhcCkKICAgICAgICAgICAgfQogICAgICAgICAgICBtYW5hZ2VyLnVwZGF0ZUFwcFdpZGdldChpZHMsIHZpZXdzKQogICAgICAgIH0KICAgIH0KfQo=
+package com.gotify.client.widget
+
+import android.app.PendingIntent
+import android.appwidget.AppWidgetManager
+import android.appwidget.AppWidgetProvider
+import android.content.ComponentName
+import android.content.Context
+import android.content.Intent
+import android.widget.RemoteViews
+import com.gotify.client.R
+import com.gotify.client.data.datastore.PreferencesRepository
+import com.gotify.client.util.currentLocalized
+import com.gotify.client.data.db.MessageDao
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@AndroidEntryPoint
+class UnreadWidgetProvider : AppWidgetProvider() {
+
+    @Inject lateinit var prefs: PreferencesRepository
+    @Inject lateinit var messageDao: MessageDao
+
+    override fun onUpdate(context: Context, manager: AppWidgetManager, ids: IntArray) {
+        val pending = goAsync()
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                val serverId = prefs.userPreferences.first().activeServerId
+                val unread = if (serverId > 0) messageDao.getUnreadCount(serverId).first() else 0
+                val latest = if (serverId > 0) messageDao.observeLatestMessage(serverId).first() else null
+                push(context, unread, latest?.title?.ifBlank { null } ?: latest?.message)
+            } finally {
+                pending.finish()
+            }
+        }
+    }
+
+    companion object {
+        fun push(context: Context, unread: Int, latest: String?) {
+            val manager = AppWidgetManager.getInstance(context)
+            val ids = manager.getAppWidgetIds(ComponentName(context, UnreadWidgetProvider::class.java))
+            if (ids.isEmpty()) return
+
+            val launch = context.packageManager.getLaunchIntentForPackage(context.packageName)
+                ?.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP) ?: return
+            val tap = PendingIntent.getActivity(
+                context, 0, launch,
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+            val lctx = context.currentLocalized()
+            val views = RemoteViews(context.packageName, R.layout.widget_unread).apply {
+                setTextViewText(R.id.widget_count, unread.toString())
+                setTextViewText(
+                    R.id.widget_label,
+                    lctx.resources.getQuantityString(R.plurals.widget_unread, unread)
+                )
+                setTextViewText(R.id.widget_latest, latest ?: lctx.getString(R.string.widget_no_messages))
+                setOnClickPendingIntent(R.id.widget_root, tap)
+            }
+            manager.updateAppWidget(ids, views)
+        }
+    }
+}

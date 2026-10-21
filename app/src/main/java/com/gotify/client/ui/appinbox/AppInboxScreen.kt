@@ -1,1 +1,236 @@
-cGFja2FnZSBjb20uZ290aWZ5LmNsaWVudC51aS5hcHBpbmJveAoKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5FeHBlcmltZW50YWxGb3VuZGF0aW9uQXBpCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LkFycmFuZ2VtZW50CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LndpZHRoSW4KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5LnJlbWVtYmVyTGF6eUxpc3RTdGF0ZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5pbnB1dC5uZXN0ZWRzY3JvbGwubmVzdGVkU2Nyb2xsCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnRleHQuc3R5bGUuVGV4dE92ZXJmbG93CmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC51aS5jb21wb25lbnRzLkxvYWRNb3JlRWZmZWN0CmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC51aS5jb21wb25lbnRzLkxvYWRpbmdNb3JlSW5kaWNhdG9yCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC51aS5jb21wb25lbnRzLmdvdGlmeVRvcEFwcEJhckNvbG9ycwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5Cb3gKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuUGFkZGluZ1ZhbHVlcwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5Sb3cKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuZmlsbE1heFNpemUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuZmlsbE1heFdpZHRoCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LnBhZGRpbmcKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5LkxhenlDb2x1bW4KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5Lml0ZW1zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLkljb25zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmF1dG9taXJyb3JlZC5vdXRsaW5lZC5BcnJvd0JhY2sKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMub3V0bGluZWQuRGVsZXRlU3dlZXAKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMub3V0bGluZWQuSW5ib3gKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkFsZXJ0RGlhbG9nCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5CdXR0b24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkJ1dHRvbkRlZmF1bHRzCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5FeHBlcmltZW50YWxNYXRlcmlhbDNBcGkKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb25CdXR0b24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk1hdGVyaWFsVGhlbWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLlNjYWZmb2xkCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5TbmFja2Jhckhvc3QKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLlNuYWNrYmFySG9zdFN0YXRlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5UZXh0CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5UZXh0QnV0dG9uCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5Ub3BBcHBCYXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLlRvcEFwcEJhckRlZmF1bHRzCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5wdWxsdG9yZWZyZXNoLlB1bGxUb1JlZnJlc2hCb3gKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLnB1bGx0b3JlZnJlc2gucmVtZW1iZXJQdWxsVG9SZWZyZXNoU3RhdGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5Db21wb3NhYmxlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuZ2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5MYXVuY2hlZEVmZmVjdAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLm11dGFibGVTdGF0ZU9mCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUucmVtZW1iZXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5zZXRWYWx1ZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5BbGlnbm1lbnQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuTW9kaWZpZXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkudW5pdC5kcAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5wbGF0Zm9ybS5Mb2NhbENvbnRleHQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkucmVzLnN0cmluZ1Jlc291cmNlCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC5SCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC5kYXRhLm1vZGVsLkdvdGlmeU1lc3NhZ2UKaW1wb3J0IGNvbS5nb3RpZnkuY2xpZW50LnVpLmNvbXBvbmVudHMuRW1wdHlTdGF0ZQppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQudWkuY29tcG9uZW50cy5NZXNzYWdlQ2FyZAppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQudWkuY29tcG9uZW50cy5NZXNzYWdlQ2FyZFNrZWxldG9uCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC51aS5jb21wb25lbnRzLkRhdGVIZWFkZXIKaW1wb3J0IGNvbS5nb3RpZnkuY2xpZW50LnVpLmNvbXBvbmVudHMuZGF5TGFiZWwKaW1wb3J0IGNvbS5nb3RpZnkuY2xpZW50LnVpLmNvbXBvbmVudHMucmVtZW1iZXJVbmRvYWJsZURlbGV0ZQppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQudWkuYXBwcy5BcHBJY29uUmVzb2x2ZWQKCkBPcHRJbihFeHBlcmltZW50YWxNYXRlcmlhbDNBcGk6OmNsYXNzLCBFeHBlcmltZW50YWxGb3VuZGF0aW9uQXBpOjpjbGFzcykKQENvbXBvc2FibGUKZnVuIEFwcEluYm94U2NyZWVuKAogICAgYXBwTmFtZTogU3RyaW5nLAogICAgYXBwSW1hZ2VVcmw6IFN0cmluZz8sCiAgICBjbGllbnRUb2tlbjogU3RyaW5nLAogICAgc2VydmVyQmFzZVVybDogU3RyaW5nLAogICAgbWVzc2FnZXM6IExpc3Q8R290aWZ5TWVzc2FnZT4sCiAgICBpc0xvYWRpbmc6IEJvb2xlYW4sCiAgICBpc1JlZnJlc2hpbmc6IEJvb2xlYW4sCiAgICBoYXNNb3JlUGFnZXM6IEJvb2xlYW4sCiAgICBjYWNoZVN5bmNUcnVuY2F0ZWQ6IEJvb2xlYW4sCiAgICBlcnJvck1lc3NhZ2U6IFN0cmluZz8sCiAgICBvblJlZnJlc2g6ICgpIC0+IFVuaXQsCiAgICBvbkxvYWRNb3JlOiAoKSAtPiBVbml0LAogICAgb25CYWNrOiAoKSAtPiBVbml0LAogICAgb25NZXNzYWdlQ2xpY2s6IChHb3RpZnlNZXNzYWdlKSAtPiBVbml0LAogICAgb25EZWxldGVNZXNzYWdlOiAoTG9uZykgLT4gVW5pdCwKICAgIG9uVW5kb0RlbGV0ZTogKExvbmcpIC0+IFVuaXQsCiAgICBvbkNsZWFyQWxsOiAoKSAtPiBVbml0LAogICAgbW9kaWZpZXI6IE1vZGlmaWVyID0gTW9kaWZpZXIKKSB7CiAgICB2YXIgc2hvd0NsZWFyRGlhbG9nIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoZmFsc2UpIH0KICAgIHZhbCBwdWxsU3RhdGUgPSByZW1lbWJlclB1bGxUb1JlZnJlc2hTdGF0ZSgpCiAgICB2YWwgc25hY2tiYXJIb3N0U3RhdGUgPSByZW1lbWJlciB7IFNuYWNrYmFySG9zdFN0YXRlKCkgfQogICAgdmFsIGRlbGV0ZVdpdGhVbmRvID0gcmVtZW1iZXJVbmRvYWJsZURlbGV0ZShzbmFja2Jhckhvc3RTdGF0ZSwgb25EZWxldGVNZXNzYWdlLCBvblVuZG9EZWxldGUpCiAgICB2YWwgY29udGV4dCA9IExvY2FsQ29udGV4dC5jdXJyZW50CiAgICB2YWwgc2VjdGlvbnMgPSByZW1lbWJlcihtZXNzYWdlcykgeyBtZXNzYWdlcy5ncm91cEJ5IHsgZGF5TGFiZWwoaXQuZGF0ZSwgY29udGV4dCkgfSB9CiAgICB2YWwgbGlzdFN0YXRlID0gcmVtZW1iZXJMYXp5TGlzdFN0YXRlKCkKICAgIHZhbCBzY3JvbGxCZWhhdmlvciA9IFRvcEFwcEJhckRlZmF1bHRzLnBpbm5lZFNjcm9sbEJlaGF2aW9yKCkKICAgIExvYWRNb3JlRWZmZWN0KGxpc3RTdGF0ZSwgaGFzTW9yZVBhZ2VzICYmICFpc0xvYWRpbmcsIG9uTG9hZE1vcmUpCgogICAgTGF1bmNoZWRFZmZlY3QoZXJyb3JNZXNzYWdlKSB7CiAgICAgICAgZXJyb3JNZXNzYWdlPy5sZXQgeyBzbmFja2Jhckhvc3RTdGF0ZS5zaG93U25hY2tiYXIoaXQpIH0KICAgIH0KCiAgICBTY2FmZm9sZCgKICAgICAgICBtb2RpZmllciA9IG1vZGlmaWVyLm5lc3RlZFNjcm9sbChzY3JvbGxCZWhhdmlvci5uZXN0ZWRTY3JvbGxDb25uZWN0aW9uKSwKICAgICAgICBzbmFja2Jhckhvc3QgPSB7IFNuYWNrYmFySG9zdChzbmFja2Jhckhvc3RTdGF0ZSkgfSwKICAgICAgICB0b3BCYXIgPSB7CiAgICAgICAgICAgIFRvcEFwcEJhcigKICAgICAgICAgICAgICAgIHRpdGxlID0gewogICAgICAgICAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseSwKICAgICAgICAgICAgICAgICAgICAgICAgaG9yaXpvbnRhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuc3BhY2VkQnkoMTAuZHApCiAgICAgICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEFwcEljb25SZXNvbHZlZCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlc29sdmVkSW1hZ2VVcmwgPSBhcHBJbWFnZVVybCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFwcE5hbWUgPSBhcHBOYW1lLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xpZW50VG9rZW4gPSBjbGllbnRUb2tlbiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhCYXNlVXJsID0gc2VydmVyQmFzZVVybCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNpemUgPSAzMi5kcAogICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBhcHBOYW1lLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGUgPSBNYXRlcmlhbFRoZW1lLnR5cG9ncmFwaHkudGl0bGVMYXJnZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1heExpbmVzID0gMSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG92ZXJmbG93ID0gVGV4dE92ZXJmbG93LkVsbGlwc2lzCiAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgbmF2aWdhdGlvbkljb24gPSB7CiAgICAgICAgICAgICAgICAgICAgSWNvbkJ1dHRvbihvbkNsaWNrID0gb25CYWNrKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuQXV0b01pcnJvcmVkLk91dGxpbmVkLkFycm93QmFjaywgc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuY2RfYmFjaykpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIGFjdGlvbnMgPSB7CiAgICAgICAgICAgICAgICAgICAgaWYgKG1lc3NhZ2VzLmlzTm90RW1wdHkoKSkgewogICAgICAgICAgICAgICAgICAgICAgICBJY29uQnV0dG9uKG9uQ2xpY2sgPSB7IHNob3dDbGVhckRpYWxvZyA9IHRydWUgfSkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbihJY29ucy5PdXRsaW5lZC5EZWxldGVTd2VlcCwgY29udGVudERlc2NyaXB0aW9uID0gc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuY2RfY2xlYXJfYWxsX21lc3NhZ2VzKSkKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICBjb2xvcnMgPSBnb3RpZnlUb3BBcHBCYXJDb2xvcnMoKSwKICAgICAgICAgICAgICAgIHNjcm9sbEJlaGF2aW9yID0gc2Nyb2xsQmVoYXZpb3IKICAgICAgICAgICAgKQogICAgICAgIH0sCiAgICAgICAgY29udGFpbmVyQ29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLmJhY2tncm91bmQKICAgICkgeyBwYWRkaW5nIC0+CgogICAgICAgIFB1bGxUb1JlZnJlc2hCb3goCiAgICAgICAgICAgIGlzUmVmcmVzaGluZyA9IGlzUmVmcmVzaGluZywKICAgICAgICAgICAgb25SZWZyZXNoID0gb25SZWZyZXNoLAogICAgICAgICAgICBzdGF0ZSA9IHB1bGxTdGF0ZSwKICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllcgogICAgICAgICAgICAgICAgLmZpbGxNYXhTaXplKCkKICAgICAgICAgICAgICAgIC5wYWRkaW5nKHBhZGRpbmcpCiAgICAgICAgKSB7CiAgICAgICAgICAgIGlmIChpc0xvYWRpbmcgJiYgbWVzc2FnZXMuaXNFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICBMYXp5Q29sdW1uKAogICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFNpemUoKS53aWR0aEluKG1heCA9IDg0MC5kcCkuYWxpZ24oQWxpZ25tZW50LlRvcENlbnRlciksCiAgICAgICAgICAgICAgICAgICAgdXNlclNjcm9sbEVuYWJsZWQgPSBmYWxzZSwKICAgICAgICAgICAgICAgICAgICBjb250ZW50UGFkZGluZyA9IFBhZGRpbmdWYWx1ZXMoMTYuZHApLAogICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsQXJyYW5nZW1lbnQgPSBBcnJhbmdlbWVudC5zcGFjZWRCeSgxMC5kcCkKICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgIGl0ZW1zKDUpIHsgTWVzc2FnZUNhcmRTa2VsZXRvbigpIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSBlbHNlIGlmIChtZXNzYWdlcy5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgICAgIEJveChNb2RpZmllci5maWxsTWF4U2l6ZSgpLCBjb250ZW50QWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlcikgewogICAgICAgICAgICAgICAgICAgIEVtcHR5U3RhdGUoCiAgICAgICAgICAgICAgICAgICAgICAgIGljb24gPSBJY29ucy5PdXRsaW5lZC5JbmJveCwKICAgICAgICAgICAgICAgICAgICAgICAgdGl0bGUgPSBzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5lbXB0eV9ub25lX3RpdGxlKSwKICAgICAgICAgICAgICAgICAgICAgICAgc3VidGl0bGUgPSBzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5pbmJveF9lbXB0eV9zdWIsIGFwcE5hbWUpCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgTGF6eUNvbHVtbigKICAgICAgICAgICAgICAgICAgICBzdGF0ZSA9IGxpc3RTdGF0ZSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhTaXplKCkud2lkdGhJbihtYXggPSA4NDAuZHApLmFsaWduKEFsaWdubWVudC5Ub3BDZW50ZXIpLAogICAgICAgICAgICAgICAgICAgIGNvbnRlbnRQYWRkaW5nID0gUGFkZGluZ1ZhbHVlcyhzdGFydCA9IDE2LmRwLCBlbmQgPSAxNi5kcCwgdG9wID0gNC5kcCwgYm90dG9tID0gMjQuZHApLAogICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsQXJyYW5nZW1lbnQgPSBBcnJhbmdlbWVudC5zcGFjZWRCeSgxMC5kcCkKICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgIHNlY3Rpb25zLmZvckVhY2ggeyAobGFiZWwsIGRheU1lc3NhZ2VzKSAtPgogICAgICAgICAgICAgICAgICAgICAgICBzdGlja3lIZWFkZXIoa2V5ID0gImhlYWRlcl8kbGFiZWwiKSB7IERhdGVIZWFkZXIobGFiZWwpIH0KICAgICAgICAgICAgICAgICAgICAgICAgaXRlbXMoZGF5TWVzc2FnZXMsIGtleSA9IHsgaXQuaWQgfSkgeyBtZXNzYWdlIC0+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBNZXNzYWdlQ2FyZCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0aXRsZSA9IG1lc3NhZ2UudGl0bGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbWVzc2FnZSA9IG1lc3NhZ2UubWVzc2FnZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhcHBOYW1lID0gYXBwTmFtZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhcHBJbWFnZVVybCA9IGFwcEltYWdlVXJsLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsaWVudFRva2VuID0gY2xpZW50VG9rZW4sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXV0aEJhc2VVcmwgPSBzZXJ2ZXJCYXNlVXJsLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW9yaXR5ID0gbWVzc2FnZS5wcmlvcml0eSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkYXRlID0gbWVzc2FnZS5kYXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlzUmVhZCA9IG1lc3NhZ2UuaXNSZWFkLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2sgPSB7IG9uTWVzc2FnZUNsaWNrKG1lc3NhZ2UpIH0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25EZWxldGUgPSB7IGRlbGV0ZVdpdGhVbmRvKG1lc3NhZ2UuaWQpIH0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5hbmltYXRlSXRlbSgpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgaWYgKGNhY2hlU3luY1RydW5jYXRlZCkgewogICAgICAgICAgICAgICAgICAgICAgICBpdGVtKGtleSA9ICJ0cnVuY2F0ZWQiKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLnN5bmNfdHJ1bmNhdGVkX25vdGVfc2FmZXR5KSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5U21hbGwsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5wYWRkaW5nKGJvdHRvbSA9IDQuZHApCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgaWYgKGhhc01vcmVQYWdlcyAmJiAhaXNMb2FkaW5nKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGl0ZW0oa2V5ID0gImxvYWRfbW9yZSIpIHsgTG9hZGluZ01vcmVJbmRpY2F0b3IoKSB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGlmIChzaG93Q2xlYXJEaWFsb2cpIHsKICAgICAgICBBbGVydERpYWxvZygKICAgICAgICAgICAgb25EaXNtaXNzUmVxdWVzdCA9IHsgc2hvd0NsZWFyRGlhbG9nID0gZmFsc2UgfSwKICAgICAgICAgICAgaWNvbiA9IHsKICAgICAgICAgICAgICAgIEljb24oCiAgICAgICAgICAgICAgICAgICAgSWNvbnMuT3V0bGluZWQuRGVsZXRlU3dlZXAsCiAgICAgICAgICAgICAgICAgICAgbnVsbCwKICAgICAgICAgICAgICAgICAgICB0aW50ID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5lcnJvcgogICAgICAgICAgICAgICAgKQogICAgICAgICAgICB9LAogICAgICAgICAgICB0aXRsZSA9IHsgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5kaWFsb2dfY2xlYXJfYWxsX3RpdGxlKSkgfSwKICAgICAgICAgICAgdGV4dCA9IHsgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5kaWFsb2dfY2xlYXJfYWxsX2JvZHksIGFwcE5hbWUpKSB9LAogICAgICAgICAgICBjb25maXJtQnV0dG9uID0gewogICAgICAgICAgICAgICAgQnV0dG9uKAogICAgICAgICAgICAgICAgICAgIG9uQ2xpY2sgPSB7IG9uQ2xlYXJBbGwoKTsgc2hvd0NsZWFyRGlhbG9nID0gZmFsc2UgfSwKICAgICAgICAgICAgICAgICAgICBjb2xvcnMgPSBCdXR0b25EZWZhdWx0cy5idXR0b25Db2xvcnMoCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5lcnJvciwKICAgICAgICAgICAgICAgICAgICAgICAgY29udGVudENvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vbkVycm9yCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgKSB7IFRleHQoc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuYWN0aW9uX2NsZWFyX2FsbCkpIH0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgZGlzbWlzc0J1dHRvbiA9IHsKICAgICAgICAgICAgICAgIFRleHRCdXR0b24ob25DbGljayA9IHsgc2hvd0NsZWFyRGlhbG9nID0gZmFsc2UgfSkgeyBUZXh0KHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmFjdGlvbl9jYW5jZWwpKSB9CiAgICAgICAgICAgIH0KICAgICAgICApCiAgICB9Cn0K
+package com.gotify.client.ui.appinbox
+
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.text.style.TextOverflow
+import com.gotify.client.ui.components.LoadMoreEffect
+import com.gotify.client.ui.components.LoadingMoreIndicator
+import com.gotify.client.ui.components.gotifyTopAppBarColors
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.ArrowBack
+import androidx.compose.material.icons.outlined.DeleteSweep
+import androidx.compose.material.icons.outlined.Inbox
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.pulltorefresh.PullToRefreshBox
+import androidx.compose.material3.pulltorefresh.rememberPullToRefreshState
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
+import com.gotify.client.R
+import com.gotify.client.data.model.GotifyMessage
+import com.gotify.client.ui.components.EmptyState
+import com.gotify.client.ui.components.MessageCard
+import com.gotify.client.ui.components.MessageCardSkeleton
+import com.gotify.client.ui.components.DateHeader
+import com.gotify.client.ui.components.dayLabel
+import com.gotify.client.ui.components.rememberUndoableDelete
+import com.gotify.client.ui.apps.AppIconResolved
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+@Composable
+fun AppInboxScreen(
+    appName: String,
+    appImageUrl: String?,
+    clientToken: String,
+    serverBaseUrl: String,
+    messages: List<GotifyMessage>,
+    isLoading: Boolean,
+    isRefreshing: Boolean,
+    hasMorePages: Boolean,
+    cacheSyncTruncated: Boolean,
+    errorMessage: String?,
+    onRefresh: () -> Unit,
+    onLoadMore: () -> Unit,
+    onBack: () -> Unit,
+    onMessageClick: (GotifyMessage) -> Unit,
+    onDeleteMessage: (Long) -> Unit,
+    onUndoDelete: (Long) -> Unit,
+    onClearAll: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    var showClearDialog by remember { mutableStateOf(false) }
+    val pullState = rememberPullToRefreshState()
+    val snackbarHostState = remember { SnackbarHostState() }
+    val deleteWithUndo = rememberUndoableDelete(snackbarHostState, onDeleteMessage, onUndoDelete)
+    val context = LocalContext.current
+    val sections = remember(messages) { messages.groupBy { dayLabel(it.date, context) } }
+    val listState = rememberLazyListState()
+    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
+    LoadMoreEffect(listState, hasMorePages && !isLoading, onLoadMore)
+
+    LaunchedEffect(errorMessage) {
+        errorMessage?.let { snackbarHostState.showSnackbar(it) }
+    }
+
+    Scaffold(
+        modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+        snackbarHost = { SnackbarHost(snackbarHostState) },
+        topBar = {
+            TopAppBar(
+                title = {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(10.dp)
+                    ) {
+                        AppIconResolved(
+                            resolvedImageUrl = appImageUrl,
+                            appName = appName,
+                            clientToken = clientToken,
+                            authBaseUrl = serverBaseUrl,
+                            size = 32.dp
+                        )
+                        Text(
+                            appName,
+                            style = MaterialTheme.typography.titleLarge,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
+                },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Icon(Icons.AutoMirrored.Outlined.ArrowBack, stringResource(R.string.cd_back))
+                    }
+                },
+                actions = {
+                    if (messages.isNotEmpty()) {
+                        IconButton(onClick = { showClearDialog = true }) {
+                            Icon(Icons.Outlined.DeleteSweep, contentDescription = stringResource(R.string.cd_clear_all_messages))
+                        }
+                    }
+                },
+                colors = gotifyTopAppBarColors(),
+                scrollBehavior = scrollBehavior
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { padding ->
+
+        PullToRefreshBox(
+            isRefreshing = isRefreshing,
+            onRefresh = onRefresh,
+            state = pullState,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+        ) {
+            if (isLoading && messages.isEmpty()) {
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize().widthIn(max = 840.dp).align(Alignment.TopCenter),
+                    userScrollEnabled = false,
+                    contentPadding = PaddingValues(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    items(5) { MessageCardSkeleton() }
+                }
+            } else if (messages.isEmpty()) {
+                Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    EmptyState(
+                        icon = Icons.Outlined.Inbox,
+                        title = stringResource(R.string.empty_none_title),
+                        subtitle = stringResource(R.string.inbox_empty_sub, appName)
+                    )
+                }
+            } else {
+                LazyColumn(
+                    state = listState,
+                    modifier = Modifier.fillMaxSize().widthIn(max = 840.dp).align(Alignment.TopCenter),
+                    contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 4.dp, bottom = 24.dp),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    sections.forEach { (label, dayMessages) ->
+                        stickyHeader(key = "header_$label") { DateHeader(label) }
+                        items(dayMessages, key = { it.id }) { message ->
+                            MessageCard(
+                                title = message.title,
+                                message = message.message,
+                                appName = appName,
+                                appImageUrl = appImageUrl,
+                                clientToken = clientToken,
+                                authBaseUrl = serverBaseUrl,
+                                priority = message.priority,
+                                date = message.date,
+                                isRead = message.isRead,
+                                onClick = { onMessageClick(message) },
+                                onDelete = { deleteWithUndo(message.id) },
+                                modifier = Modifier.animateItem()
+                            )
+                        }
+                    }
+                    if (cacheSyncTruncated) {
+                        item(key = "truncated") {
+                            Text(
+                                stringResource(R.string.sync_truncated_note_safety),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.padding(bottom = 4.dp)
+                            )
+                        }
+                    }
+                    if (hasMorePages && !isLoading) {
+                        item(key = "load_more") { LoadingMoreIndicator() }
+                    }
+                }
+            }
+        }
+    }
+
+    if (showClearDialog) {
+        AlertDialog(
+            onDismissRequest = { showClearDialog = false },
+            icon = {
+                Icon(
+                    Icons.Outlined.DeleteSweep,
+                    null,
+                    tint = MaterialTheme.colorScheme.error
+                )
+            },
+            title = { Text(stringResource(R.string.dialog_clear_all_title)) },
+            text = { Text(stringResource(R.string.dialog_clear_all_body, appName)) },
+            confirmButton = {
+                Button(
+                    onClick = { onClearAll(); showClearDialog = false },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.error,
+                        contentColor = MaterialTheme.colorScheme.onError
+                    )
+                ) { Text(stringResource(R.string.action_clear_all)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showClearDialog = false }) { Text(stringResource(R.string.action_cancel)) }
+            }
+        )
+    }
+}

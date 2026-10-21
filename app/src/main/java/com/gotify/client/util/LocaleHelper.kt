@@ -1,1 +1,48 @@
-cGFja2FnZSBjb20uZ290aWZ5LmNsaWVudC51dGlsCgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbnRleHQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5yZXMuQ29uZmlndXJhdGlvbgppbXBvcnQgYW5kcm9pZC5vcy5Mb2NhbGVMaXN0CmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC5kYXRhLmRhdGFzdG9yZS5BcHBMYW5ndWFnZQppbXBvcnQgamF2YS51dGlsLkxvY2FsZQoKLyoqCiAqIFN5bmNocm9ub3VzIG1pcnJvciBvZiB0aGUgbGFuZ3VhZ2UgcHJlZmVyZW5jZSAoU2hhcmVkUHJlZmVyZW5jZXMpLCBzbyB0aGF0CiAqIGF0dGFjaEJhc2VDb250ZXh0IGFuZCBiYWNrZ3JvdW5kIHNlcnZpY2VzIGNhbiByZWFkIGl0IHdpdGhvdXQgY29yb3V0aW5lcy4KICogVGhlIERhdGFTdG9yZSBwcmVmZXJlbmNlIGluIFByZWZlcmVuY2VzUmVwb3NpdG9yeSByZW1haW5zIHRoZSBzb3VyY2Ugb2YKICogdHJ1dGggZm9yIHRoZSBVSTsgdGhpcyBtaXJyb3IgaXMgd3JpdHRlbiBhbG9uZ3NpZGUgaXQgaW4gc2V0QXBwTGFuZ3VhZ2UoKS4KICovCm9iamVjdCBMb2NhbGVTdG9yZSB7CiAgICBwcml2YXRlIGNvbnN0IHZhbCBQUkVGUyA9ICJnb3RpZnlfbG9jYWxlIgogICAgcHJpdmF0ZSBjb25zdCB2YWwgS0VZID0gImFwcF9sYW5ndWFnZSIKCiAgICBmdW4gcmVhZChjb250ZXh0OiBDb250ZXh0KTogQXBwTGFuZ3VhZ2UgewogICAgICAgIHZhbCByYXcgPSBjb250ZXh0LmdldFNoYXJlZFByZWZlcmVuY2VzKFBSRUZTLCBDb250ZXh0Lk1PREVfUFJJVkFURSkKICAgICAgICAgICAgLmdldFN0cmluZyhLRVksIG51bGwpCiAgICAgICAgcmV0dXJuIHJhdz8ubGV0IHsgcnVuQ2F0Y2hpbmcgeyBBcHBMYW5ndWFnZS52YWx1ZU9mKGl0KSB9LmdldE9yTnVsbCgpIH0KICAgICAgICAgICAgPzogQXBwTGFuZ3VhZ2UuU1lTVEVNCiAgICB9CgogICAgZnVuIHdyaXRlKGNvbnRleHQ6IENvbnRleHQsIGxhbmd1YWdlOiBBcHBMYW5ndWFnZSkgewogICAgICAgIGNvbnRleHQuZ2V0U2hhcmVkUHJlZmVyZW5jZXMoUFJFRlMsIENvbnRleHQuTU9ERV9QUklWQVRFKQogICAgICAgICAgICAuZWRpdCgpLnB1dFN0cmluZyhLRVksIGxhbmd1YWdlLm5hbWUpLmFwcGx5KCkKICAgIH0KfQoKZnVuIEFwcExhbmd1YWdlLnRvTG9jYWxlKCk6IExvY2FsZT8gPSB3aGVuICh0aGlzKSB7CiAgICBBcHBMYW5ndWFnZS5TWVNURU0gLT4gbnVsbAogICAgQXBwTGFuZ3VhZ2UuRU4gLT4gTG9jYWxlLkVOR0xJU0gKICAgIEFwcExhbmd1YWdlLlpIIC0+IExvY2FsZS5TSU1QTElGSUVEX0NISU5FU0UKfQoKLyoqIEEgY29udGV4dCB3aG9zZSByZXNvdXJjZXMgcmVzb2x2ZSBpbiBbbGFuZ3VhZ2VdOyBTWVNURU0gcmV0dXJucyB0aGlzIGNvbnRleHQgdW5jaGFuZ2VkLiAqLwpmdW4gQ29udGV4dC5sb2NhbGl6ZWRGb3IobGFuZ3VhZ2U6IEFwcExhbmd1YWdlKTogQ29udGV4dCB7CiAgICB2YWwgbG9jYWxlID0gbGFuZ3VhZ2UudG9Mb2NhbGUoKSA/OiByZXR1cm4gdGhpcwogICAgdmFsIGNvbmZpZyA9IENvbmZpZ3VyYXRpb24ocmVzb3VyY2VzLmNvbmZpZ3VyYXRpb24pCiAgICBjb25maWcuc2V0TG9jYWxlKGxvY2FsZSkKICAgIGNvbmZpZy5zZXRMb2NhbGVzKExvY2FsZUxpc3QobG9jYWxlKSkKICAgIHJldHVybiBjcmVhdGVDb25maWd1cmF0aW9uQ29udGV4dChjb25maWcpCn0KCi8qKiBUaGlzIGNvbnRleHQgcmUtd3JhcHBlZCBpbiB0aGUgdXNlcidzIHN0b3JlZCBsYW5ndWFnZSBjaG9pY2UuICovCmZ1biBDb250ZXh0LmN1cnJlbnRMb2NhbGl6ZWQoKTogQ29udGV4dCA9IGxvY2FsaXplZEZvcihMb2NhbGVTdG9yZS5yZWFkKHRoaXMpKQo=
+package com.gotify.client.util
+
+import android.content.Context
+import android.content.res.Configuration
+import android.os.LocaleList
+import com.gotify.client.data.datastore.AppLanguage
+import java.util.Locale
+
+/**
+ * Synchronous mirror of the language preference (SharedPreferences), so that
+ * attachBaseContext and background services can read it without coroutines.
+ * The DataStore preference in PreferencesRepository remains the source of
+ * truth for the UI; this mirror is written alongside it in setAppLanguage().
+ */
+object LocaleStore {
+    private const val PREFS = "gotify_locale"
+    private const val KEY = "app_language"
+
+    fun read(context: Context): AppLanguage {
+        val raw = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            .getString(KEY, null)
+        return raw?.let { runCatching { AppLanguage.valueOf(it) }.getOrNull() }
+            ?: AppLanguage.SYSTEM
+    }
+
+    fun write(context: Context, language: AppLanguage) {
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            .edit().putString(KEY, language.name).apply()
+    }
+}
+
+fun AppLanguage.toLocale(): Locale? = when (this) {
+    AppLanguage.SYSTEM -> null
+    AppLanguage.EN -> Locale.ENGLISH
+    AppLanguage.ZH -> Locale.SIMPLIFIED_CHINESE
+}
+
+/** A context whose resources resolve in [language]; SYSTEM returns this context unchanged. */
+fun Context.localizedFor(language: AppLanguage): Context {
+    val locale = language.toLocale() ?: return this
+    val config = Configuration(resources.configuration)
+    config.setLocale(locale)
+    config.setLocales(LocaleList(locale))
+    return createConfigurationContext(config)
+}
+
+/** This context re-wrapped in the user's stored language choice. */
+fun Context.currentLocalized(): Context = localizedFor(LocaleStore.read(this))

@@ -1,1 +1,480 @@
-cGFja2FnZSBjb20uZ290aWZ5LmNsaWVudC51aS5ob21lCgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5hbmltYXRpb24uKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLioKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxhenkuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLnNoYXBlLioKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuSWNvbnMKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMub3V0bGluZWQuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMucHVsbHRvcmVmcmVzaC4qCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5BbGlnbm1lbnQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuTW9kaWZpZXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuZHJhdy5jbGlwCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLmlucHV0Lm5lc3RlZHNjcm9sbC5uZXN0ZWRTY3JvbGwKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuc2VtYW50aWNzLlJvbGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuc2VtYW50aWNzLmNvbnRlbnREZXNjcmlwdGlvbgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5zZW1hbnRpY3Muc2VtYW50aWNzCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnRleHQuZm9udC5Gb250V2VpZ2h0CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnRleHQuc3R5bGUuVGV4dE92ZXJmbG93CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnVuaXQuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5wbGF0Zm9ybS5Mb2NhbENvbnRleHQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkucmVzLnBsdXJhbFN0cmluZ1Jlc291cmNlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnJlcy5zdHJpbmdSZXNvdXJjZQppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQuUgppbXBvcnQgY29tLmdvdGlmeS5jbGllbnQuZGF0YS5tb2RlbC4qCmltcG9ydCBjb20uZ290aWZ5LmNsaWVudC51aS5jb21wb25lbnRzLioKCkBPcHRJbihFeHBlcmltZW50YWxNYXRlcmlhbDNBcGk6OmNsYXNzLCBFeHBlcmltZW50YWxGb3VuZGF0aW9uQXBpOjpjbGFzcykKQENvbXBvc2FibGUKZnVuIEhvbWVTY3JlZW4oCiAgICBtZXNzYWdlczogICAgICAgICAgICBMaXN0PEdvdGlmeU1lc3NhZ2U+LAogICAgYXBwbGljYXRpb25zOiAgICAgICAgTGlzdDxHb3RpZnlBcHBsaWNhdGlvbj4sCiAgICBjbGllbnRUb2tlbjogICAgICAgICBTdHJpbmcsCiAgICBzZXJ2ZXJCYXNlVXJsOiAgICAgICBTdHJpbmcsCiAgICBjb25uZWN0aW9uU3RhdHVzOiAgICBDb25uZWN0aW9uU3RhdHVzLAogICAgYWN0aXZlU2VydmVyTmFtZTogICAgU3RyaW5nLAogICAgdW5yZWFkQ291bnQ6ICAgICAgICAgSW50LAogICAgY2FjaGVkTWVzc2FnZUNvdW50OiAgSW50LAogICAgY2FjaGVTeW5jVHJ1bmNhdGVkOiAgQm9vbGVhbiwKICAgIGlzTG9hZGluZzogICAgICAgICAgIEJvb2xlYW4sCiAgICBpc1JlZnJlc2hpbmc6ICAgICAgICBCb29sZWFuLAogICAgaGFzTW9yZVBhZ2VzOiAgICAgICAgQm9vbGVhbiwKICAgIGVycm9yTWVzc2FnZTogICAgICAgIFN0cmluZz8sCiAgICBzZWxlY3RlZEFwcElkOiAgICAgICBJbnQ/LAogICAgdW5yZWFkT25seTogICAgICAgICAgQm9vbGVhbiwKICAgIG9uU2VsZWN0QXBwOiAgICAgICAgIChJbnQ/KSAtPiBVbml0LAogICAgb25Ub2dnbGVVbnJlYWQ6ICAgICAgKCkgLT4gVW5pdCwKICAgIG9uUmVmcmVzaDogICAgICAgICAgICgpIC0+IFVuaXQsCiAgICBvbkxvYWRNb3JlOiAgICAgICAgICAoKSAtPiBVbml0LAogICAgb25NZXNzYWdlQ2xpY2s6ICAgICAgKEdvdGlmeU1lc3NhZ2UpIC0+IFVuaXQsCiAgICBvbkRlbGV0ZU1lc3NhZ2U6ICAgICAoTG9uZykgLT4gVW5pdCwKICAgIG9uVW5kb0RlbGV0ZTogICAgICAgIChMb25nKSAtPiBVbml0LAogICAgb25EZWxldGVBbGxNZXNzYWdlczogKCkgLT4gVW5pdCwKICAgIG9uTWFya0FsbEFzUmVhZDogICAgICgpIC0+IFVuaXQsCiAgICBvbk9wZW5TZXJ2ZXJzOiAgICAgICAoKSAtPiBVbml0LAogICAgb25PcGVuU2VhcmNoOiAgICAgICAgKCkgLT4gVW5pdCwKICAgIG1vZGlmaWVyOiAgICAgICAgICAgIE1vZGlmaWVyID0gTW9kaWZpZXIKKSB7CiAgICB2YXIgc2hvd0RlbGV0ZUFsbERpYWxvZyBieSByZW1lbWJlciB7IG11dGFibGVTdGF0ZU9mKGZhbHNlKSB9CiAgICB2YWwgc25hY2tiYXJIb3N0U3RhdGUgICA9IHJlbWVtYmVyIHsgU25hY2tiYXJIb3N0U3RhdGUoKSB9CiAgICB2YWwgZGVsZXRlV2l0aFVuZG8gICAgICA9IHJlbWVtYmVyVW5kb2FibGVEZWxldGUoc25hY2tiYXJIb3N0U3RhdGUsIG9uRGVsZXRlTWVzc2FnZSwgb25VbmRvRGVsZXRlKQoKICAgIHZhbCBhcHBNYXAgPSByZW1lbWJlcihhcHBsaWNhdGlvbnMpIHsgYXBwbGljYXRpb25zLmFzc29jaWF0ZUJ5IHsgaXQuaWQgfSB9CiAgICB2YWwgY29udGV4dCA9IExvY2FsQ29udGV4dC5jdXJyZW50CiAgICAvLyBgbWVzc2FnZXNgIGlzIGFscmVhZHkgZmlsdGVyZWQgaW4gdGhlIGRhdGFiYXNlIChIb21lVmlld01vZGVsKSwgc28gZmlsdGVycyBjb3ZlciBldmVyeSBjYWNoZWQgbWVzc2FnZS4KICAgIHZhbCBzZWN0aW9ucyA9IHJlbWVtYmVyKG1lc3NhZ2VzKSB7IG1lc3NhZ2VzLmdyb3VwQnkgeyBkYXlMYWJlbChpdC5kYXRlLCBjb250ZXh0KSB9IH0KCiAgICB2YWwgcHVsbFJlZnJlc2hTdGF0ZSA9IHJlbWVtYmVyUHVsbFRvUmVmcmVzaFN0YXRlKCkKICAgIHZhbCBsaXN0U3RhdGUgICAgICAgID0gcmVtZW1iZXJMYXp5TGlzdFN0YXRlKCkKICAgIHZhbCBzY3JvbGxCZWhhdmlvciAgID0gVG9wQXBwQmFyRGVmYXVsdHMucGlubmVkU2Nyb2xsQmVoYXZpb3IoKQogICAgTG9hZE1vcmVFZmZlY3QobGlzdFN0YXRlLCBoYXNNb3JlUGFnZXMgJiYgIWlzTG9hZGluZywgb25Mb2FkTW9yZSkKCiAgICBTY2FmZm9sZCgKICAgICAgICBtb2RpZmllciAgICAgICA9IG1vZGlmaWVyLm5lc3RlZFNjcm9sbChzY3JvbGxCZWhhdmlvci5uZXN0ZWRTY3JvbGxDb25uZWN0aW9uKSwKICAgICAgICBzbmFja2Jhckhvc3QgICA9IHsgU25hY2tiYXJIb3N0KHNuYWNrYmFySG9zdFN0YXRlKSB9LAogICAgICAgIHRvcEJhciAgICAgICAgID0gewogICAgICAgICAgICBIb21lVG9wQmFyKAogICAgICAgICAgICAgICAgc2VydmVyTmFtZSAgICAgICA9IGFjdGl2ZVNlcnZlck5hbWUsCiAgICAgICAgICAgICAgICBjb25uZWN0aW9uU3RhdHVzID0gY29ubmVjdGlvblN0YXR1cywKICAgICAgICAgICAgICAgIG9uT3BlblNlcnZlcnMgICAgPSBvbk9wZW5TZXJ2ZXJzLAogICAgICAgICAgICAgICAgb25PcGVuU2VhcmNoICAgICA9IG9uT3BlblNlYXJjaCwKICAgICAgICAgICAgICAgIG9uRGVsZXRlQWxsICAgICAgPSB7IHNob3dEZWxldGVBbGxEaWFsb2cgPSB0cnVlIH0sCiAgICAgICAgICAgICAgICB1bnJlYWRDb3VudCAgICAgID0gdW5yZWFkQ291bnQsCiAgICAgICAgICAgICAgICBvbk1hcmtBbGxBc1JlYWQgID0gb25NYXJrQWxsQXNSZWFkLAogICAgICAgICAgICAgICAgc2Nyb2xsQmVoYXZpb3IgICA9IHNjcm9sbEJlaGF2aW9yCiAgICAgICAgICAgICkKICAgICAgICB9LAogICAgICAgIGNvbnRhaW5lckNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5iYWNrZ3JvdW5kCiAgICApIHsgcGFkZGluZ1ZhbHVlcyAtPgoKICAgICAgICBQdWxsVG9SZWZyZXNoQm94KAogICAgICAgICAgICBpc1JlZnJlc2hpbmcgPSBpc1JlZnJlc2hpbmcsCiAgICAgICAgICAgIG9uUmVmcmVzaCAgICA9IG9uUmVmcmVzaCwKICAgICAgICAgICAgc3RhdGUgICAgICAgID0gcHVsbFJlZnJlc2hTdGF0ZSwKICAgICAgICAgICAgbW9kaWZpZXIgICAgID0gTW9kaWZpZXIuZmlsbE1heFNpemUoKS5wYWRkaW5nKHBhZGRpbmdWYWx1ZXMpCiAgICAgICAgKSB7CiAgICAgICAgICAgIExhenlDb2x1bW4oCiAgICAgICAgICAgICAgICBzdGF0ZSAgICAgICAgICAgICAgID0gbGlzdFN0YXRlLAogICAgICAgICAgICAgICAgbW9kaWZpZXIgICAgICAgICAgICA9IE1vZGlmaWVyCiAgICAgICAgICAgICAgICAgICAgLmZpbGxNYXhTaXplKCkKICAgICAgICAgICAgICAgICAgICAud2lkdGhJbihtYXggPSA4NDAuZHApCiAgICAgICAgICAgICAgICAgICAgLmFsaWduKEFsaWdubWVudC5Ub3BDZW50ZXIpLAogICAgICAgICAgICAgICAgY29udGVudFBhZGRpbmcgICAgICA9IFBhZGRpbmdWYWx1ZXMoc3RhcnQgPSAxNi5kcCwgZW5kID0gMTYuZHAsIHRvcCA9IDQuZHAsIGJvdHRvbSA9IDI0LmRwKSwKICAgICAgICAgICAgICAgIHZlcnRpY2FsQXJyYW5nZW1lbnQgPSBBcnJhbmdlbWVudC5zcGFjZWRCeSgxMC5kcCkKICAgICAgICAgICAgKSB7CgogICAgICAgICAgICAgICAgaXRlbShrZXkgPSAic3VtbWFyeSIpIHsKICAgICAgICAgICAgICAgICAgICBIb21lU3VtbWFyeUNhcmQoCiAgICAgICAgICAgICAgICAgICAgICAgIHVucmVhZENvdW50ICAgICAgICA9IHVucmVhZENvdW50LAogICAgICAgICAgICAgICAgICAgICAgICBjYWNoZWRDb3VudCAgICAgICAgPSBjYWNoZWRNZXNzYWdlQ291bnQsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbm5lY3Rpb25TdGF0dXMgICA9IGNvbm5lY3Rpb25TdGF0dXMsCiAgICAgICAgICAgICAgICAgICAgICAgIGNhY2hlU3luY1RydW5jYXRlZCA9IGNhY2hlU3luY1RydW5jYXRlZCwKICAgICAgICAgICAgICAgICAgICAgICAgb25NYXJrQWxsQXNSZWFkICAgID0gb25NYXJrQWxsQXNSZWFkCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIGVycm9yTWVzc2FnZT8ubGV0IHsgZXJyb3IgLT4KICAgICAgICAgICAgICAgICAgICBpdGVtKGtleSA9ICJzeW5jX2Vycm9yIikgewogICAgICAgICAgICAgICAgICAgICAgICBTdXJmYWNlKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc2hhcGUgICAgPSBNYXRlcmlhbFRoZW1lLnNoYXBlcy5sYXJnZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yICAgID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5lcnJvckNvbnRhaW5lciwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCkuYW5pbWF0ZUl0ZW0oKQogICAgICAgICAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBtb2RpZmllciAgICAgICAgICAgICAgPSBNb2RpZmllci5wYWRkaW5nKHN0YXJ0ID0gMTYuZHAsIGVuZCA9IDguZHAsIHRvcCA9IDguZHAsIGJvdHRvbSA9IDguZHApLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsQWxpZ25tZW50ICAgICA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LnNwYWNlZEJ5KDEyLmRwKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbigKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbnMuT3V0bGluZWQuQ2xvdWRPZmYsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRlbnREZXNjcmlwdGlvbiA9IG51bGwsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRpbnQgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uRXJyb3JDb250YWluZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZXJyb3IsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlICAgID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LmJvZHlTbWFsbCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgICAgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uRXJyb3JDb250YWluZXIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0QnV0dG9uKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrID0gb25SZWZyZXNoLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcnMgID0gQnV0dG9uRGVmYXVsdHMudGV4dEJ1dHRvbkNvbG9ycyhjb250ZW50Q29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uRXJyb3JDb250YWluZXIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSB7IFRleHQoc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuYWN0aW9uX3JldHJ5KSkgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIC8vIEZpbHRlciBjaGlwcyDigJQgc2hvd24gd2hlbmV2ZXIgdGhlcmUgaXMgc29tZXRoaW5nIHRvIGZpbHRlciwgb3IgYSBmaWx0ZXIgaXMgYWN0aXZlCiAgICAgICAgICAgICAgICBpZiAoYXBwbGljYXRpb25zLmlzTm90RW1wdHkoKSB8fCB1bnJlYWRPbmx5KSB7CiAgICAgICAgICAgICAgICAgICAgaXRlbShrZXkgPSAiZmlsdGVyX2NoaXBzIikgewogICAgICAgICAgICAgICAgICAgICAgICBBcHBGaWx0ZXJDaGlwcygKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFwcGxpY2F0aW9ucyAgID0gYXBwbGljYXRpb25zLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xpZW50VG9rZW4gICAgPSBjbGllbnRUb2tlbiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhCYXNlVXJsICAgID0gc2VydmVyQmFzZVVybCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdGVkQXBwSWQgID0gc2VsZWN0ZWRBcHBJZCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVucmVhZE9ubHkgICAgID0gdW5yZWFkT25seSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uVG9nZ2xlVW5yZWFkID0gb25Ub2dnbGVVbnJlYWQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvblNlbGVjdEFwcCAgICA9IG9uU2VsZWN0QXBwLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgICAgICAgPSBNb2RpZmllci5ob3Jpem9udGFsQmxlZWQoMTYuZHApCiAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgLy8gTG9hZGluZyBza2VsZXRvbnMKICAgICAgICAgICAgICAgIGlmIChpc0xvYWRpbmcgJiYgbWVzc2FnZXMuaXNFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICAgICAgaXRlbXMoNSwga2V5ID0geyAic2tlbGV0b25fJGl0IiB9KSB7IE1lc3NhZ2VDYXJkU2tlbGV0b24oKSB9CiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgLy8gRW1wdHkgc3RhdGUKICAgICAgICAgICAgICAgIGlmICghaXNMb2FkaW5nICYmIG1lc3NhZ2VzLmlzRW1wdHkoKSkgewogICAgICAgICAgICAgICAgICAgIGl0ZW0oa2V5ID0gImVtcHR5IikgewogICAgICAgICAgICAgICAgICAgICAgICB2YWwgZmlsdGVyZWQgPSB1bnJlYWRPbmx5IHx8IHNlbGVjdGVkQXBwSWQgIT0gbnVsbAogICAgICAgICAgICAgICAgICAgICAgICAvLyBOb3QgZmlsbFBhcmVudE1heFNpemU6IHRoZSBzdW1tYXJ5IGNhcmQgYWJvdmUgd291bGQgcHVzaCBpdCBpbnRvIGEgcG9pbnRsZXNzIHNjcm9sbC4KICAgICAgICAgICAgICAgICAgICAgICAgQm94KE1vZGlmaWVyLmZpbGxQYXJlbnRNYXhXaWR0aCgpLnBhZGRpbmcodG9wID0gMjQuZHApLCBjb250ZW50QWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlcikgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgRW1wdHlTdGF0ZSgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpY29uICAgICA9IHdoZW4gewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB1bnJlYWRPbmx5ICAgICAgICAgICAgLT4gSWNvbnMuT3V0bGluZWQuRG9uZUFsbAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzZWxlY3RlZEFwcElkICE9IG51bGwgLT4gSWNvbnMuT3V0bGluZWQuRmlsdGVyQWx0T2ZmCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UgICAgICAgICAgICAgICAgICAtPiBJY29ucy5PdXRsaW5lZC5Ob3RpZmljYXRpb25zTm9uZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGl0bGUgICAgPSB3aGVuIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdW5yZWFkT25seSAgICAgICAgICAgIC0+IHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmVtcHR5X2NhdWdodF91cF90aXRsZSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRBcHBJZCAhPSBudWxsIC0+IHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmVtcHR5X2FwcF90aXRsZSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZWxzZSAgICAgICAgICAgICAgICAgIC0+IHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmVtcHR5X25vbmVfdGl0bGUpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdWJ0aXRsZSA9IHdoZW4gewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB1bnJlYWRPbmx5ICAgICAgICAgICAgLT4gc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuZW1wdHlfY2F1Z2h0X3VwX3N1YikKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRBcHBJZCAhPSBudWxsIC0+IHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmVtcHR5X2FwcF9zdWIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UgICAgICAgICAgICAgICAgICAtPiBzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5lbXB0eV9ub25lX3N1YikKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFjdGlvbiAgID0gaWYgKGZpbHRlcmVkKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEZpbGxlZFRvbmFsQnV0dG9uKG9uQ2xpY2sgPSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHVucmVhZE9ubHkpIG9uVG9nZ2xlVW5yZWFkKCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiAoc2VsZWN0ZWRBcHBJZCAhPSBudWxsKSBvblNlbGVjdEFwcChudWxsKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSkgeyBUZXh0KHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmFjdGlvbl9zaG93X2FsbF9tZXNzYWdlcykpIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gZWxzZSBudWxsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgc2VjdGlvbnMuZm9yRWFjaCB7IChsYWJlbCwgZGF5TWVzc2FnZXMpIC0+CiAgICAgICAgICAgICAgICAgICAgc3RpY2t5SGVhZGVyKGtleSA9ICJoZWFkZXJfJGxhYmVsIikgewogICAgICAgICAgICAgICAgICAgICAgICBEYXRlSGVhZGVyKGxhYmVsKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBpdGVtcyhkYXlNZXNzYWdlcywga2V5ID0geyBpdC5pZCB9KSB7IG1lc3NhZ2UgLT4KICAgICAgICAgICAgICAgICAgICAgICAgdmFsIGFwcCA9IGFwcE1hcFttZXNzYWdlLmFwcElkXQogICAgICAgICAgICAgICAgICAgICAgICBNZXNzYWdlQ2FyZCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRpdGxlICAgICAgID0gbWVzc2FnZS50aXRsZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1lc3NhZ2UgICAgID0gbWVzc2FnZS5tZXNzYWdlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgYXBwTmFtZSAgICAgPSBhcHA/Lm5hbWUgPzogc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuYXBwX3dpdGhfaWQsIG1lc3NhZ2UuYXBwSWQpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgYXBwSW1hZ2VVcmwgPSBhcHA/LmltYWdlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xpZW50VG9rZW4gPSBjbGllbnRUb2tlbiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhCYXNlVXJsID0gc2VydmVyQmFzZVVybCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW9yaXR5ICAgID0gbWVzc2FnZS5wcmlvcml0eSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRhdGUgICAgICAgID0gbWVzc2FnZS5kYXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaXNSZWFkICAgICAgPSBtZXNzYWdlLmlzUmVhZCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2sgICAgID0geyBvbk1lc3NhZ2VDbGljayhtZXNzYWdlKSB9LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgb25EZWxldGUgICAgPSB7IGRlbGV0ZVdpdGhVbmRvKG1lc3NhZ2UuaWQpIH0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBtb2RpZmllciAgICA9IE1vZGlmaWVyLmFuaW1hdGVJdGVtKCkKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBpZiAoaGFzTW9yZVBhZ2VzICYmICFpc0xvYWRpbmcgJiYgbWVzc2FnZXMuaXNOb3RFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICAgICAgaXRlbShrZXkgPSAibG9hZF9tb3JlIikgeyBMb2FkaW5nTW9yZUluZGljYXRvcigpIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBpZiAoc2hvd0RlbGV0ZUFsbERpYWxvZykgewogICAgICAgIEFsZXJ0RGlhbG9nKAogICAgICAgICAgICBvbkRpc21pc3NSZXF1ZXN0ID0geyBzaG93RGVsZXRlQWxsRGlhbG9nID0gZmFsc2UgfSwKICAgICAgICAgICAgaWNvbiAgICA9IHsgSWNvbihJY29ucy5PdXRsaW5lZC5EZWxldGVGb3JldmVyLCBudWxsLCB0aW50ID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5lcnJvcikgfSwKICAgICAgICAgICAgdGl0bGUgICA9IHsgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5kaWFsb2dfZGVsZXRlX2FsbF90aXRsZSkpIH0sCiAgICAgICAgICAgIHRleHQgICAgPSB7IFRleHQoc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuZGlhbG9nX2RlbGV0ZV9hbGxfYm9keSkpIH0sCiAgICAgICAgICAgIGNvbmZpcm1CdXR0b24gPSB7CiAgICAgICAgICAgICAgICBCdXR0b24oCiAgICAgICAgICAgICAgICAgICAgb25DbGljayA9IHsgb25EZWxldGVBbGxNZXNzYWdlcygpOyBzaG93RGVsZXRlQWxsRGlhbG9nID0gZmFsc2UgfSwKICAgICAgICAgICAgICAgICAgICBjb2xvcnMgID0gQnV0dG9uRGVmYXVsdHMuYnV0dG9uQ29sb3JzKAogICAgICAgICAgICAgICAgICAgICAgICBjb250YWluZXJDb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUuZXJyb3IsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRlbnRDb2xvciAgID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vbkVycm9yCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgKSB7IFRleHQoc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuYWN0aW9uX2RlbGV0ZV9hbGwpKSB9CiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIGRpc21pc3NCdXR0b24gPSB7IFRleHRCdXR0b24ob25DbGljayA9IHsgc2hvd0RlbGV0ZUFsbERpYWxvZyA9IGZhbHNlIH0pIHsgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5hY3Rpb25fY2FuY2VsKSkgfSB9CiAgICAgICAgKQogICAgfQp9CgpAQ29tcG9zYWJsZQpwcml2YXRlIGZ1biBIb21lU3VtbWFyeUNhcmQoCiAgICB1bnJlYWRDb3VudDogSW50LAogICAgY2FjaGVkQ291bnQ6IEludCwKICAgIGNvbm5lY3Rpb25TdGF0dXM6IENvbm5lY3Rpb25TdGF0dXMsCiAgICBjYWNoZVN5bmNUcnVuY2F0ZWQ6IEJvb2xlYW4sCiAgICBvbk1hcmtBbGxBc1JlYWQ6ICgpIC0+IFVuaXQsCiAgICBtb2RpZmllcjogTW9kaWZpZXIgPSBNb2RpZmllcgopIHsKICAgIHZhbCBjb25uZWN0aW9uTGFiZWwgPSB3aGVuIChjb25uZWN0aW9uU3RhdHVzKSB7CiAgICAgICAgQ29ubmVjdGlvblN0YXR1cy5DT05ORUNURUQgICAgLT4gc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuY29ubl9saXZlKQogICAgICAgIENvbm5lY3Rpb25TdGF0dXMuQ09OTkVDVElORyAgIC0+IHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmNvbm5fY29ubmVjdGluZykKICAgICAgICBDb25uZWN0aW9uU3RhdHVzLkVSUk9SICAgICAgICAtPiBzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5jb25uX2lzc3VlKQogICAgICAgIENvbm5lY3Rpb25TdGF0dXMuRElTQ09OTkVDVEVEIC0+IHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmNvbm5fb2ZmbGluZSkKICAgIH0KICAgIHZhbCBvbkNvbnRhaW5lciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25QcmltYXJ5Q29udGFpbmVyCiAgICBTdXJmYWNlKAogICAgICAgIG1vZGlmaWVyID0gbW9kaWZpZXIuZmlsbE1heFdpZHRoKCksCiAgICAgICAgc2hhcGUgICAgPSBNYXRlcmlhbFRoZW1lLnNoYXBlcy5leHRyYUxhcmdlLAogICAgICAgIGNvbG9yICAgID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5wcmltYXJ5Q29udGFpbmVyCiAgICApIHsKICAgICAgICBDb2x1bW4oCiAgICAgICAgICAgIG1vZGlmaWVyICAgICAgICAgICAgPSBNb2RpZmllci5wYWRkaW5nKGhvcml6b250YWwgPSAyMC5kcCwgdmVydGljYWwgPSAxOC5kcCksCiAgICAgICAgICAgIHZlcnRpY2FsQXJyYW5nZW1lbnQgPSBBcnJhbmdlbWVudC5zcGFjZWRCeSg0LmRwKQogICAgICAgICkgewogICAgICAgICAgICBSb3coCiAgICAgICAgICAgICAgICBtb2RpZmllciAgICAgICAgICA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLAogICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseQogICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgIENvbHVtbihNb2RpZmllci53ZWlnaHQoMWYpKSB7CiAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCAgPSBpZiAodW5yZWFkQ291bnQgPT0gMCkgc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuc3VtbWFyeV9hbGxfY2F1Z2h0X3VwKSBlbHNlIHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLnN1bW1hcnlfdW5yZWFkLCB1bnJlYWRDb3VudCksCiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LmhlYWRsaW5lU21hbGwsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gb25Db250YWluZXIKICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCAgPSBwbHVyYWxTdHJpbmdSZXNvdXJjZShSLnBsdXJhbHMuc3VtbWFyeV9jYWNoZWQsIGNhY2hlZENvdW50LCBjYWNoZWRDb3VudCksCiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LmJvZHlNZWRpdW0sCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gb25Db250YWluZXIuY29weShhbHBoYSA9IDAuNzhmKQogICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIFN1cmZhY2UoCiAgICAgICAgICAgICAgICAgICAgc2hhcGUgICAgPSBDaXJjbGVTaGFwZSwKICAgICAgICAgICAgICAgICAgICBjb2xvciAgICA9IG9uQ29udGFpbmVyLmNvcHkoYWxwaGEgPSAwLjEwZiksCiAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5zZW1hbnRpY3MgeyBjb250ZW50RGVzY3JpcHRpb24gPSBzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5jZF9jb25uZWN0aW9uLCBjb25uZWN0aW9uTGFiZWwpIH0KICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgICAgICAgICAgICAgID0gTW9kaWZpZXIucGFkZGluZyhob3Jpem9udGFsID0gMTAuZHAsIHZlcnRpY2FsID0gNi5kcCksCiAgICAgICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsQWxpZ25tZW50ICAgICA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5LAogICAgICAgICAgICAgICAgICAgICAgICBob3Jpem9udGFsQXJyYW5nZW1lbnQgPSBBcnJhbmdlbWVudC5zcGFjZWRCeSg2LmRwKQogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBDb25uZWN0aW9uRG90KGNvbm5lY3Rpb25TdGF0dXMpCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoY29ubmVjdGlvbkxhYmVsLCBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5sYWJlbE1lZGl1bSwgY29sb3IgPSBvbkNvbnRhaW5lcikKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgQW5pbWF0ZWRWaXNpYmlsaXR5KHZpc2libGUgPSB1bnJlYWRDb3VudCA+IDApIHsKICAgICAgICAgICAgICAgIFRleHRCdXR0b24oCiAgICAgICAgICAgICAgICAgICAgb25DbGljayAgICAgICAgPSBvbk1hcmtBbGxBc1JlYWQsCiAgICAgICAgICAgICAgICAgICAgY29udGVudFBhZGRpbmcgPSBQYWRkaW5nVmFsdWVzKGhvcml6b250YWwgPSAwLmRwKSwKICAgICAgICAgICAgICAgICAgICBjb2xvcnMgICAgICAgICA9IEJ1dHRvbkRlZmF1bHRzLnRleHRCdXR0b25Db2xvcnMoY29udGVudENvbG9yID0gb25Db250YWluZXIpCiAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICBJY29uKEljb25zLk91dGxpbmVkLkRvbmVBbGwsIGNvbnRlbnREZXNjcmlwdGlvbiA9IG51bGwsIG1vZGlmaWVyID0gTW9kaWZpZXIuc2l6ZSgxOC5kcCkpCiAgICAgICAgICAgICAgICAgICAgU3BhY2VyKE1vZGlmaWVyLndpZHRoKDYuZHApKQogICAgICAgICAgICAgICAgICAgIFRleHQoc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuYWN0aW9uX21hcmtfYWxsX3JlYWQpKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIGlmIChjYWNoZVN5bmNUcnVuY2F0ZWQpIHsKICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuc3luY190cnVuY2F0ZWRfbm90ZSksCiAgICAgICAgICAgICAgICAgICAgc3R5bGUgICAgPSBNYXRlcmlhbFRoZW1lLnR5cG9ncmFwaHkuYm9keVNtYWxsLAogICAgICAgICAgICAgICAgICAgIGNvbG9yICAgID0gb25Db250YWluZXIuY29weShhbHBoYSA9IDAuNzJmKSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLnBhZGRpbmcodG9wID0gNC5kcCkKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQoKLy8g4pSA4pSA4pSAIFRvcCBCYXIg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACgpAT3B0SW4oRXhwZXJpbWVudGFsTWF0ZXJpYWwzQXBpOjpjbGFzcykKQENvbXBvc2FibGUKcHJpdmF0ZSBmdW4gSG9tZVRvcEJhcigKICAgIHNlcnZlck5hbWU6ICAgICAgIFN0cmluZywKICAgIGNvbm5lY3Rpb25TdGF0dXM6IENvbm5lY3Rpb25TdGF0dXMsCiAgICBvbk9wZW5TZXJ2ZXJzOiAgICAoKSAtPiBVbml0LAogICAgb25PcGVuU2VhcmNoOiAgICAgKCkgLT4gVW5pdCwKICAgIG9uRGVsZXRlQWxsOiAgICAgICgpIC0+IFVuaXQsCiAgICB1bnJlYWRDb3VudDogICAgICBJbnQsCiAgICBvbk1hcmtBbGxBc1JlYWQ6ICAoKSAtPiBVbml0LAogICAgc2Nyb2xsQmVoYXZpb3I6ICAgVG9wQXBwQmFyU2Nyb2xsQmVoYXZpb3IKKSB7CiAgICB2YXIgc2hvd01lbnUgYnkgcmVtZW1iZXIgeyBtdXRhYmxlU3RhdGVPZihmYWxzZSkgfQogICAgVG9wQXBwQmFyKAogICAgICAgIHRpdGxlID0gewogICAgICAgICAgICAvLyBUYXBwYWJsZSBzZXJ2ZXIgc3dpdGNoZXIgd2l0aCBhIHByb3BlciB0b3VjaCB0YXJnZXQgYW5kIHJpcHBsZSBib3VuZHMuCiAgICAgICAgICAgIENvbHVtbigKICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIKICAgICAgICAgICAgICAgICAgICAuY2xpcChNYXRlcmlhbFRoZW1lLnNoYXBlcy5zbWFsbCkKICAgICAgICAgICAgICAgICAgICAuY2xpY2thYmxlKAogICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrTGFiZWwgPSBzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5hY3Rpb25fc3dpdGNoX3NlcnZlciksCiAgICAgICAgICAgICAgICAgICAgICAgIHJvbGUgICAgICAgICA9IFJvbGUuQnV0dG9uLAogICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrICAgICAgPSBvbk9wZW5TZXJ2ZXJzCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIC5wYWRkaW5nKGhvcml6b250YWwgPSA0LmRwLCB2ZXJ0aWNhbCA9IDIuZHApCiAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5uYXZfbWVzc2FnZXMpLCBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS50aXRsZUxhcmdlLCBmb250V2VpZ2h0ID0gRm9udFdlaWdodC5Cb2xkKQogICAgICAgICAgICAgICAgUm93KAogICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsQWxpZ25tZW50ICAgICA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5LAogICAgICAgICAgICAgICAgICAgIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LnNwYWNlZEJ5KDYuZHApCiAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICBDb25uZWN0aW9uRG90KHN0YXR1cyA9IGNvbm5lY3Rpb25TdGF0dXMpCiAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCAgICAgPSBzZXJ2ZXJOYW1lLAogICAgICAgICAgICAgICAgICAgICAgICBzdHlsZSAgICA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5sYWJlbE1lZGl1bSwKICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgICAgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsCiAgICAgICAgICAgICAgICAgICAgICAgIG1heExpbmVzID0gMSwKICAgICAgICAgICAgICAgICAgICAgICAgb3ZlcmZsb3cgPSBUZXh0T3ZlcmZsb3cuRWxsaXBzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmLCBmaWxsID0gZmFsc2UpCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIEljb24oCiAgICAgICAgICAgICAgICAgICAgICAgIEljb25zLk91dGxpbmVkLlVuZm9sZE1vcmUsIG51bGwsCiAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuc2l6ZSgxNC5kcCksCiAgICAgICAgICAgICAgICAgICAgICAgIHRpbnQgICAgID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50CiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICBhY3Rpb25zID0gewogICAgICAgICAgICBJY29uQnV0dG9uKG9uQ2xpY2sgPSBvbk9wZW5TZWFyY2gpIHsgSWNvbihJY29ucy5PdXRsaW5lZC5TZWFyY2gsIHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmNkX3NlYXJjaF9tZXNzYWdlcykpIH0KICAgICAgICAgICAgQm94IHsKICAgICAgICAgICAgICAgIEljb25CdXR0b24ob25DbGljayA9IHsgc2hvd01lbnUgPSB0cnVlIH0pIHsgSWNvbihJY29ucy5PdXRsaW5lZC5Nb3JlVmVydCwgc3RyaW5nUmVzb3VyY2UoUi5zdHJpbmcuY2RfbW9yZV9vcHRpb25zKSkgfQogICAgICAgICAgICAgICAgRHJvcGRvd25NZW51KGV4cGFuZGVkID0gc2hvd01lbnUsIG9uRGlzbWlzc1JlcXVlc3QgPSB7IHNob3dNZW51ID0gZmFsc2UgfSkgewogICAgICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0oCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgICAgICAgID0geyBUZXh0KHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmFjdGlvbl9tYXJrX2FsbF9yZWFkKSkgfSwKICAgICAgICAgICAgICAgICAgICAgICAgbGVhZGluZ0ljb24gPSB7IEljb24oSWNvbnMuT3V0bGluZWQuRG9uZUFsbCwgbnVsbCkgfSwKICAgICAgICAgICAgICAgICAgICAgICAgZW5hYmxlZCAgICAgPSB1bnJlYWRDb3VudCA+IDAsCiAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2sgICAgID0geyBvbk1hcmtBbGxBc1JlYWQoKTsgc2hvd01lbnUgPSBmYWxzZSB9CiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0oCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgICAgICAgID0geyBUZXh0KHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmFjdGlvbl9zd2l0Y2hfc2VydmVyKSkgfSwKICAgICAgICAgICAgICAgICAgICAgICAgbGVhZGluZ0ljb24gPSB7IEljb24oSWNvbnMuT3V0bGluZWQuRG5zLCBudWxsKSB9LAogICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrICAgICA9IHsgb25PcGVuU2VydmVycygpOyBzaG93TWVudSA9IGZhbHNlIH0KICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgSG9yaXpvbnRhbERpdmlkZXIoKQogICAgICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0oCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgICAgICAgID0geyBUZXh0KHN0cmluZ1Jlc291cmNlKFIuc3RyaW5nLmFjdGlvbl9kZWxldGVfYWxsX21lc3NhZ2VzKSwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLmVycm9yKSB9LAogICAgICAgICAgICAgICAgICAgICAgICBsZWFkaW5nSWNvbiA9IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuT3V0bGluZWQuRGVsZXRlU3dlZXAsIG51bGwsIHRpbnQgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLmVycm9yKQogICAgICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrICAgICA9IHsgb25EZWxldGVBbGwoKTsgc2hvd01lbnUgPSBmYWxzZSB9CiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICBjb2xvcnMgICAgICAgICA9IGdvdGlmeVRvcEFwcEJhckNvbG9ycygpLAogICAgICAgIHNjcm9sbEJlaGF2aW9yID0gc2Nyb2xsQmVoYXZpb3IKICAgICkKfQoKLy8g4pSA4pSA4pSAIEFwcCBGaWx0ZXIgQ2hpcHMg4oCUIGZ1bGx5IGNvbnRyb2xsZWQgKG5vIGludGVybmFsIHN0YXRlKSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKCkBDb21wb3NhYmxlCnByaXZhdGUgZnVuIEFwcEZpbHRlckNoaXBzKAogICAgYXBwbGljYXRpb25zOiAgIExpc3Q8R290aWZ5QXBwbGljYXRpb24+LAogICAgY2xpZW50VG9rZW46ICAgIFN0cmluZywKICAgIGF1dGhCYXNlVXJsOiAgICBTdHJpbmcsCiAgICBzZWxlY3RlZEFwcElkOiAgSW50PywKICAgIHVucmVhZE9ubHk6ICAgICBCb29sZWFuLAogICAgb25Ub2dnbGVVbnJlYWQ6ICgpIC0+IFVuaXQsCiAgICBvblNlbGVjdEFwcDogICAgKEludD8pIC0+IFVuaXQsCiAgICBtb2RpZmllcjogICAgICAgTW9kaWZpZXIgPSBNb2RpZmllcgopIHsKICAgIExhenlSb3coCiAgICAgICAgbW9kaWZpZXIgICAgICAgICAgICAgID0gbW9kaWZpZXIsCiAgICAgICAgY29udGVudFBhZGRpbmcgICAgICAgID0gUGFkZGluZ1ZhbHVlcyhob3Jpem9udGFsID0gMTYuZHApLAogICAgICAgIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LnNwYWNlZEJ5KDguZHApLAogICAgICAgIHZlcnRpY2FsQWxpZ25tZW50ICAgICA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5CiAgICApIHsKICAgICAgICAvLyAiVW5yZWFkIiBpcyBhbiBpbmRlcGVuZGVudCB0b2dnbGU7IGtlZXAgaXQgdmlzdWFsbHkgYXBhcnQgZnJvbSB0aGUgc2luZ2xlLWNob2ljZSBhcHAgZmlsdGVyLgogICAgICAgIGl0ZW0oa2V5ID0gInVucmVhZCIpIHsKICAgICAgICAgICAgRmlsdGVyQ2hpcCgKICAgICAgICAgICAgICAgIHNlbGVjdGVkICAgID0gdW5yZWFkT25seSwKICAgICAgICAgICAgICAgIG9uQ2xpY2sgICAgID0gb25Ub2dnbGVVbnJlYWQsCiAgICAgICAgICAgICAgICBsYWJlbCAgICAgICA9IHsgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5maWx0ZXJfdW5yZWFkKSkgfSwKICAgICAgICAgICAgICAgIGxlYWRpbmdJY29uID0gewogICAgICAgICAgICAgICAgICAgIEljb24oCiAgICAgICAgICAgICAgICAgICAgICAgIGlmICh1bnJlYWRPbmx5KSBJY29ucy5PdXRsaW5lZC5DaGVjayBlbHNlIEljb25zLk91dGxpbmVkLk1hcmtFbWFpbFVucmVhZCwKICAgICAgICAgICAgICAgICAgICAgICAgY29udGVudERlc2NyaXB0aW9uID0gbnVsbCwKICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5zaXplKEZpbHRlckNoaXBEZWZhdWx0cy5JY29uU2l6ZSkKICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICkKICAgICAgICB9CiAgICAgICAgaXRlbShrZXkgPSAiZGl2aWRlciIpIHsKICAgICAgICAgICAgVmVydGljYWxEaXZpZGVyKE1vZGlmaWVyLmhlaWdodCgyNC5kcCkucGFkZGluZyhob3Jpem9udGFsID0gNC5kcCkpCiAgICAgICAgfQogICAgICAgIGl0ZW0oa2V5ID0gImFsbCIpIHsKICAgICAgICAgICAgRmlsdGVyQ2hpcCgKICAgICAgICAgICAgICAgIHNlbGVjdGVkID0gc2VsZWN0ZWRBcHBJZCA9PSBudWxsLAogICAgICAgICAgICAgICAgb25DbGljayAgPSB7IG9uU2VsZWN0QXBwKG51bGwpIH0sCiAgICAgICAgICAgICAgICBsYWJlbCAgICA9IHsgVGV4dChzdHJpbmdSZXNvdXJjZShSLnN0cmluZy5maWx0ZXJfYWxsX2FwcHMpKSB9CiAgICAgICAgICAgICkKICAgICAgICB9CiAgICAgICAgaXRlbXMoYXBwbGljYXRpb25zLCBrZXkgPSB7ICJhcHBfJHtpdC5pZH0iIH0pIHsgYXBwIC0+CiAgICAgICAgICAgIEZpbHRlckNoaXAoCiAgICAgICAgICAgICAgICBzZWxlY3RlZCAgICA9IHNlbGVjdGVkQXBwSWQgPT0gYXBwLmlkLAogICAgICAgICAgICAgICAgb25DbGljayAgICAgPSB7IG9uU2VsZWN0QXBwKGFwcC5pZCkgfSwKICAgICAgICAgICAgICAgIGxhYmVsICAgICAgID0geyBUZXh0KGFwcC5uYW1lLCBtYXhMaW5lcyA9IDEsIG92ZXJmbG93ID0gVGV4dE92ZXJmbG93LkVsbGlwc2lzKSB9LAogICAgICAgICAgICAgICAgbGVhZGluZ0ljb24gPSB7CiAgICAgICAgICAgICAgICAgICAgQXBwSWNvbigKICAgICAgICAgICAgICAgICAgICAgICAgaW1hZ2VVcmwgICAgPSBhcHAuaW1hZ2UsCiAgICAgICAgICAgICAgICAgICAgICAgIGFwcE5hbWUgICAgID0gYXBwLm5hbWUsCiAgICAgICAgICAgICAgICAgICAgICAgIGNsaWVudFRva2VuID0gY2xpZW50VG9rZW4sCiAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhCYXNlVXJsID0gYXV0aEJhc2VVcmwsCiAgICAgICAgICAgICAgICAgICAgICAgIHNpemUgICAgICAgID0gMjAuZHAsCiAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyICAgID0gTW9kaWZpZXIuY2xpcChDaXJjbGVTaGFwZSkKICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICkKICAgICAgICB9CiAgICB9Cn0K
+package com.gotify.client.ui.home
+
+import androidx.compose.animation.*
+import androidx.compose.foundation.*
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.*
+import androidx.compose.foundation.shape.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.*
+import androidx.compose.material3.*
+import androidx.compose.material3.pulltorefresh.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.*
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
+import com.gotify.client.R
+import com.gotify.client.data.model.*
+import com.gotify.client.ui.components.*
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+@Composable
+fun HomeScreen(
+    messages:            List<GotifyMessage>,
+    applications:        List<GotifyApplication>,
+    clientToken:         String,
+    serverBaseUrl:       String,
+    connectionStatus:    ConnectionStatus,
+    activeServerName:    String,
+    unreadCount:         Int,
+    cachedMessageCount:  Int,
+    cacheSyncTruncated:  Boolean,
+    isLoading:           Boolean,
+    isRefreshing:        Boolean,
+    hasMorePages:        Boolean,
+    errorMessage:        String?,
+    selectedAppId:       Int?,
+    unreadOnly:          Boolean,
+    onSelectApp:         (Int?) -> Unit,
+    onToggleUnread:      () -> Unit,
+    onRefresh:           () -> Unit,
+    onLoadMore:          () -> Unit,
+    onMessageClick:      (GotifyMessage) -> Unit,
+    onDeleteMessage:     (Long) -> Unit,
+    onUndoDelete:        (Long) -> Unit,
+    onDeleteAllMessages: () -> Unit,
+    onMarkAllAsRead:     () -> Unit,
+    onOpenServers:       () -> Unit,
+    onOpenSearch:        () -> Unit,
+    modifier:            Modifier = Modifier
+) {
+    var showDeleteAllDialog by remember { mutableStateOf(false) }
+    val snackbarHostState   = remember { SnackbarHostState() }
+    val deleteWithUndo      = rememberUndoableDelete(snackbarHostState, onDeleteMessage, onUndoDelete)
+
+    val appMap = remember(applications) { applications.associateBy { it.id } }
+    val context = LocalContext.current
+    // `messages` is already filtered in the database (HomeViewModel), so filters cover every cached message.
+    val sections = remember(messages) { messages.groupBy { dayLabel(it.date, context) } }
+
+    val pullRefreshState = rememberPullToRefreshState()
+    val listState        = rememberLazyListState()
+    val scrollBehavior   = TopAppBarDefaults.pinnedScrollBehavior()
+    LoadMoreEffect(listState, hasMorePages && !isLoading, onLoadMore)
+
+    Scaffold(
+        modifier       = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+        snackbarHost   = { SnackbarHost(snackbarHostState) },
+        topBar         = {
+            HomeTopBar(
+                serverName       = activeServerName,
+                connectionStatus = connectionStatus,
+                onOpenServers    = onOpenServers,
+                onOpenSearch     = onOpenSearch,
+                onDeleteAll      = { showDeleteAllDialog = true },
+                unreadCount      = unreadCount,
+                onMarkAllAsRead  = onMarkAllAsRead,
+                scrollBehavior   = scrollBehavior
+            )
+        },
+        containerColor = MaterialTheme.colorScheme.background
+    ) { paddingValues ->
+
+        PullToRefreshBox(
+            isRefreshing = isRefreshing,
+            onRefresh    = onRefresh,
+            state        = pullRefreshState,
+            modifier     = Modifier.fillMaxSize().padding(paddingValues)
+        ) {
+            LazyColumn(
+                state               = listState,
+                modifier            = Modifier
+                    .fillMaxSize()
+                    .widthIn(max = 840.dp)
+                    .align(Alignment.TopCenter),
+                contentPadding      = PaddingValues(start = 16.dp, end = 16.dp, top = 4.dp, bottom = 24.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+
+                item(key = "summary") {
+                    HomeSummaryCard(
+                        unreadCount        = unreadCount,
+                        cachedCount        = cachedMessageCount,
+                        connectionStatus   = connectionStatus,
+                        cacheSyncTruncated = cacheSyncTruncated,
+                        onMarkAllAsRead    = onMarkAllAsRead
+                    )
+                }
+
+                errorMessage?.let { error ->
+                    item(key = "sync_error") {
+                        Surface(
+                            shape    = MaterialTheme.shapes.large,
+                            color    = MaterialTheme.colorScheme.errorContainer,
+                            modifier = Modifier.fillMaxWidth().animateItem()
+                        ) {
+                            Row(
+                                modifier              = Modifier.padding(start = 16.dp, end = 8.dp, top = 8.dp, bottom = 8.dp),
+                                verticalAlignment     = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.spacedBy(12.dp)
+                            ) {
+                                Icon(
+                                    Icons.Outlined.CloudOff,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colorScheme.onErrorContainer
+                                )
+                                Text(
+                                    error,
+                                    style    = MaterialTheme.typography.bodySmall,
+                                    color    = MaterialTheme.colorScheme.onErrorContainer,
+                                    modifier = Modifier.weight(1f)
+                                )
+                                TextButton(
+                                    onClick = onRefresh,
+                                    colors  = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onErrorContainer)
+                                ) { Text(stringResource(R.string.action_retry)) }
+                            }
+                        }
+                    }
+                }
+
+                // Filter chips — shown whenever there is something to filter, or a filter is active
+                if (applications.isNotEmpty() || unreadOnly) {
+                    item(key = "filter_chips") {
+                        AppFilterChips(
+                            applications   = applications,
+                            clientToken    = clientToken,
+                            authBaseUrl    = serverBaseUrl,
+                            selectedAppId  = selectedAppId,
+                            unreadOnly     = unreadOnly,
+                            onToggleUnread = onToggleUnread,
+                            onSelectApp    = onSelectApp,
+                            modifier       = Modifier.horizontalBleed(16.dp)
+                        )
+                    }
+                }
+
+                // Loading skeletons
+                if (isLoading && messages.isEmpty()) {
+                    items(5, key = { "skeleton_$it" }) { MessageCardSkeleton() }
+                }
+
+                // Empty state
+                if (!isLoading && messages.isEmpty()) {
+                    item(key = "empty") {
+                        val filtered = unreadOnly || selectedAppId != null
+                        // Not fillParentMaxSize: the summary card above would push it into a pointless scroll.
+                        Box(Modifier.fillParentMaxWidth().padding(top = 24.dp), contentAlignment = Alignment.Center) {
+                            EmptyState(
+                                icon     = when {
+                                    unreadOnly            -> Icons.Outlined.DoneAll
+                                    selectedAppId != null -> Icons.Outlined.FilterAltOff
+                                    else                  -> Icons.Outlined.NotificationsNone
+                                },
+                                title    = when {
+                                    unreadOnly            -> stringResource(R.string.empty_caught_up_title)
+                                    selectedAppId != null -> stringResource(R.string.empty_app_title)
+                                    else                  -> stringResource(R.string.empty_none_title)
+                                },
+                                subtitle = when {
+                                    unreadOnly            -> stringResource(R.string.empty_caught_up_sub)
+                                    selectedAppId != null -> stringResource(R.string.empty_app_sub)
+                                    else                  -> stringResource(R.string.empty_none_sub)
+                                },
+                                action   = if (filtered) {
+                                    {
+                                        FilledTonalButton(onClick = {
+                                            if (unreadOnly) onToggleUnread()
+                                            if (selectedAppId != null) onSelectApp(null)
+                                        }) { Text(stringResource(R.string.action_show_all_messages)) }
+                                    }
+                                } else null
+                            )
+                        }
+                    }
+                }
+
+                sections.forEach { (label, dayMessages) ->
+                    stickyHeader(key = "header_$label") {
+                        DateHeader(label)
+                    }
+                    items(dayMessages, key = { it.id }) { message ->
+                        val app = appMap[message.appId]
+                        MessageCard(
+                            title       = message.title,
+                            message     = message.message,
+                            appName     = app?.name ?: stringResource(R.string.app_with_id, message.appId),
+                            appImageUrl = app?.image,
+                            clientToken = clientToken,
+                            authBaseUrl = serverBaseUrl,
+                            priority    = message.priority,
+                            date        = message.date,
+                            isRead      = message.isRead,
+                            onClick     = { onMessageClick(message) },
+                            onDelete    = { deleteWithUndo(message.id) },
+                            modifier    = Modifier.animateItem()
+                        )
+                    }
+                }
+
+                if (hasMorePages && !isLoading && messages.isNotEmpty()) {
+                    item(key = "load_more") { LoadingMoreIndicator() }
+                }
+            }
+        }
+    }
+
+    if (showDeleteAllDialog) {
+        AlertDialog(
+            onDismissRequest = { showDeleteAllDialog = false },
+            icon    = { Icon(Icons.Outlined.DeleteForever, null, tint = MaterialTheme.colorScheme.error) },
+            title   = { Text(stringResource(R.string.dialog_delete_all_title)) },
+            text    = { Text(stringResource(R.string.dialog_delete_all_body)) },
+            confirmButton = {
+                Button(
+                    onClick = { onDeleteAllMessages(); showDeleteAllDialog = false },
+                    colors  = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.error,
+                        contentColor   = MaterialTheme.colorScheme.onError
+                    )
+                ) { Text(stringResource(R.string.action_delete_all)) }
+            },
+            dismissButton = { TextButton(onClick = { showDeleteAllDialog = false }) { Text(stringResource(R.string.action_cancel)) } }
+        )
+    }
+}
+
+@Composable
+private fun HomeSummaryCard(
+    unreadCount: Int,
+    cachedCount: Int,
+    connectionStatus: ConnectionStatus,
+    cacheSyncTruncated: Boolean,
+    onMarkAllAsRead: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val connectionLabel = when (connectionStatus) {
+        ConnectionStatus.CONNECTED    -> stringResource(R.string.conn_live)
+        ConnectionStatus.CONNECTING   -> stringResource(R.string.conn_connecting)
+        ConnectionStatus.ERROR        -> stringResource(R.string.conn_issue)
+        ConnectionStatus.DISCONNECTED -> stringResource(R.string.conn_offline)
+    }
+    val onContainer = MaterialTheme.colorScheme.onPrimaryContainer
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        shape    = MaterialTheme.shapes.extraLarge,
+        color    = MaterialTheme.colorScheme.primaryContainer
+    ) {
+        Column(
+            modifier            = Modifier.padding(horizontal = 20.dp, vertical = 18.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            Row(
+                modifier          = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(Modifier.weight(1f)) {
+                    Text(
+                        text  = if (unreadCount == 0) stringResource(R.string.summary_all_caught_up) else stringResource(R.string.summary_unread, unreadCount),
+                        style = MaterialTheme.typography.headlineSmall,
+                        color = onContainer
+                    )
+                    Text(
+                        text  = pluralStringResource(R.plurals.summary_cached, cachedCount, cachedCount),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = onContainer.copy(alpha = 0.78f)
+                    )
+                }
+                Surface(
+                    shape    = CircleShape,
+                    color    = onContainer.copy(alpha = 0.10f),
+                    modifier = Modifier.semantics { contentDescription = stringResource(R.string.cd_connection, connectionLabel) }
+                ) {
+                    Row(
+                        modifier              = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
+                        verticalAlignment     = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        ConnectionDot(connectionStatus)
+                        Text(connectionLabel, style = MaterialTheme.typography.labelMedium, color = onContainer)
+                    }
+                }
+            }
+            AnimatedVisibility(visible = unreadCount > 0) {
+                TextButton(
+                    onClick        = onMarkAllAsRead,
+                    contentPadding = PaddingValues(horizontal = 0.dp),
+                    colors         = ButtonDefaults.textButtonColors(contentColor = onContainer)
+                ) {
+                    Icon(Icons.Outlined.DoneAll, contentDescription = null, modifier = Modifier.size(18.dp))
+                    Spacer(Modifier.width(6.dp))
+                    Text(stringResource(R.string.action_mark_all_read))
+                }
+            }
+            if (cacheSyncTruncated) {
+                Text(
+                    stringResource(R.string.sync_truncated_note),
+                    style    = MaterialTheme.typography.bodySmall,
+                    color    = onContainer.copy(alpha = 0.72f),
+                    modifier = Modifier.padding(top = 4.dp)
+                )
+            }
+        }
+    }
+}
+
+// ─── Top Bar ──────────────────────────────────────────────────────────────────
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun HomeTopBar(
+    serverName:       String,
+    connectionStatus: ConnectionStatus,
+    onOpenServers:    () -> Unit,
+    onOpenSearch:     () -> Unit,
+    onDeleteAll:      () -> Unit,
+    unreadCount:      Int,
+    onMarkAllAsRead:  () -> Unit,
+    scrollBehavior:   TopAppBarScrollBehavior
+) {
+    var showMenu by remember { mutableStateOf(false) }
+    TopAppBar(
+        title = {
+            // Tappable server switcher with a proper touch target and ripple bounds.
+            Column(
+                modifier = Modifier
+                    .clip(MaterialTheme.shapes.small)
+                    .clickable(
+                        onClickLabel = stringResource(R.string.action_switch_server),
+                        role         = Role.Button,
+                        onClick      = onOpenServers
+                    )
+                    .padding(horizontal = 4.dp, vertical = 2.dp)
+            ) {
+                Text(stringResource(R.string.nav_messages), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                Row(
+                    verticalAlignment     = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(6.dp)
+                ) {
+                    ConnectionDot(status = connectionStatus)
+                    Text(
+                        text     = serverName,
+                        style    = MaterialTheme.typography.labelMedium,
+                        color    = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f, fill = false)
+                    )
+                    Icon(
+                        Icons.Outlined.UnfoldMore, null,
+                        modifier = Modifier.size(14.dp),
+                        tint     = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        },
+        actions = {
+            IconButton(onClick = onOpenSearch) { Icon(Icons.Outlined.Search, stringResource(R.string.cd_search_messages)) }
+            Box {
+                IconButton(onClick = { showMenu = true }) { Icon(Icons.Outlined.MoreVert, stringResource(R.string.cd_more_options)) }
+                DropdownMenu(expanded = showMenu, onDismissRequest = { showMenu = false }) {
+                    DropdownMenuItem(
+                        text        = { Text(stringResource(R.string.action_mark_all_read)) },
+                        leadingIcon = { Icon(Icons.Outlined.DoneAll, null) },
+                        enabled     = unreadCount > 0,
+                        onClick     = { onMarkAllAsRead(); showMenu = false }
+                    )
+                    DropdownMenuItem(
+                        text        = { Text(stringResource(R.string.action_switch_server)) },
+                        leadingIcon = { Icon(Icons.Outlined.Dns, null) },
+                        onClick     = { onOpenServers(); showMenu = false }
+                    )
+                    HorizontalDivider()
+                    DropdownMenuItem(
+                        text        = { Text(stringResource(R.string.action_delete_all_messages), color = MaterialTheme.colorScheme.error) },
+                        leadingIcon = {
+                            Icon(Icons.Outlined.DeleteSweep, null, tint = MaterialTheme.colorScheme.error)
+                        },
+                        onClick     = { onDeleteAll(); showMenu = false }
+                    )
+                }
+            }
+        },
+        colors         = gotifyTopAppBarColors(),
+        scrollBehavior = scrollBehavior
+    )
+}
+
+// ─── App Filter Chips — fully controlled (no internal state) ──────────────────
+
+@Composable
+private fun AppFilterChips(
+    applications:   List<GotifyApplication>,
+    clientToken:    String,
+    authBaseUrl:    String,
+    selectedAppId:  Int?,
+    unreadOnly:     Boolean,
+    onToggleUnread: () -> Unit,
+    onSelectApp:    (Int?) -> Unit,
+    modifier:       Modifier = Modifier
+) {
+    LazyRow(
+        modifier              = modifier,
+        contentPadding        = PaddingValues(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalAlignment     = Alignment.CenterVertically
+    ) {
+        // "Unread" is an independent toggle; keep it visually apart from the single-choice app filter.
+        item(key = "unread") {
+            FilterChip(
+                selected    = unreadOnly,
+                onClick     = onToggleUnread,
+                label       = { Text(stringResource(R.string.filter_unread)) },
+                leadingIcon = {
+                    Icon(
+                        if (unreadOnly) Icons.Outlined.Check else Icons.Outlined.MarkEmailUnread,
+                        contentDescription = null,
+                        modifier = Modifier.size(FilterChipDefaults.IconSize)
+                    )
+                }
+            )
+        }
+        item(key = "divider") {
+            VerticalDivider(Modifier.height(24.dp).padding(horizontal = 4.dp))
+        }
+        item(key = "all") {
+            FilterChip(
+                selected = selectedAppId == null,
+                onClick  = { onSelectApp(null) },
+                label    = { Text(stringResource(R.string.filter_all_apps)) }
+            )
+        }
+        items(applications, key = { "app_${it.id}" }) { app ->
+            FilterChip(
+                selected    = selectedAppId == app.id,
+                onClick     = { onSelectApp(app.id) },
+                label       = { Text(app.name, maxLines = 1, overflow = TextOverflow.Ellipsis) },
+                leadingIcon = {
+                    AppIcon(
+                        imageUrl    = app.image,
+                        appName     = app.name,
+                        clientToken = clientToken,
+                        authBaseUrl = authBaseUrl,
+                        size        = 20.dp,
+                        modifier    = Modifier.clip(CircleShape)
+                    )
+                }
+            )
+        }
+    }
+}
