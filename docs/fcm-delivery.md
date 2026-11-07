@@ -39,6 +39,42 @@ $env:ANDROID_HOME='E:\tools\android-sdk' # 需 platforms;android-37.0 + build-to
   - SHA-256 `400B672F2EC2A066106D88B1E19A955AC752BC0E6C978156C578B0E0387366D`
   - 未签名（本机没有 v1.1.0 keystore，`assembleRelease` 不产生签名配置）
 
+## 真机验证方法：`am force-stop` 与 `am kill` 不等价
+
+验证「进程不在 → FCM 拉起」时，**不要用 `am force-stop`**：
+
+- `am force-stop <pkg>` 会把包置为 `stopped=true`（`dumpsys package` 可见）。Android 只向 stopped 包丢弃普通广播，而 GMS 投递 `com.google.android.c2dm.intent.RECEIVE` 不带 `FLAG_INCLUDE_STOPPED_PACKAGES`，因此 FCM 消息永远进不来：
+  ```
+  W/GCM: broadcast intent callback: result=CANCELLED for Intent { act=com.google.android.c2dm.intent.RECEIVE ... pkg=com.gotify.client }
+  ```
+  进程不会被拉起、也不会有通知。这是平台既定行为，不是 App 缺陷；用 force-stop 做唤醒验证会得出错误结论（2026-11-08 已在 S10/Android 12 上复现）。
+- `am kill <pkg>`：只杀该包的后台进程，不改 `stopped` 标志，等价于「划掉最近任务 / 系统低内存回收」，才是验证 FCM 唤醒的正确手段。执行后应满足 `stopped=false` 且 `pidof` 为空。
+
+验证前置条件（缺一项结果就无法归因）：
+
+- `cmd appops get <pkg> RUN_ANY_IN_BACKGROUND` → `allow`
+- 包在 `dumpsys deviceidle whitelist` 中，`am get-standby-bucket <pkg>` → `5`（EXEMPTED）
+- `dumpsys notification` 中 `AppSettings: <pkg> ... allowNoti=true`；Samsung 等 ROM 还需关闭自启限制/电池优化
+
+成功唤醒的判读依据：logcat 出现 `ActivityManager: Start proc <pid>:<pkg>`，随后有 `GotifyFirebaseMessagingService` 执行痕迹；通知栏内容与消息原文逐字一致。
+
+## 已知缺陷与根因：FCM 后台同步被取消（versionCode 7）
+
+真机实测（S10 / Android 12，keep-alive 关闭，`am kill` 后发消息）：
+
+- 进程被拉起：`03:41:37.708 I/ActivityManager: Start proc 25169:com.gotify.client/u0a891 for broadcast {com.gotify.client/com.google.firebase.iid.FirebaseInstanceIdReceiver}`
+- 307ms 后同步被取消：
+  ```
+  W/GotifyFcm(25169): FCM-triggered sync failed
+  W/GotifyFcm(25169): Job was cancelled
+  ```
+- `logcat -b events` 中 `notification_enqueue` 在 03:41:37 之后没有任何 `com.gotify.client` 记录
+- 同一进程 03:48 仍在（存活 6 分钟以上），排除「进程被回收导致协程取消」
+
+根因：`GotifyFirebaseMessagingService` 把 `sync()` 跑在 service 私有的 `CoroutineScope`，`onDestroy()` 里 `scope.cancel()`；FCM service 在 `onMessageReceived` 返回后立即被 framework 销毁，HTTP 请求还没回来就被取消。用户随后打开 App，App 自身启动同步才把消息入库，因此出现「列表有消息、通知没弹」。
+
+修复（versionCode 8 起）：`onMessageReceived` 不再自己起协程，改为 `SyncJobService.scheduleImmediate()` 投递一次性 job（`NETWORK_TYPE_ANY` + `setOverrideDeadline(0)`），由系统在 job 执行期间保活；`lastKnownId` 过滤与 `MessageIngestor` 的 Mutex 去重不变。keep-alive 开启时 `sync()` 原样 early-return。
+
 ## 还差什么
 
 1. **v1.1.0 keystore**：本机与仓库内都没有。需要提供 keystore 文件路径 + 3 个口令，或允许推送后由 CI 产出签名包。
