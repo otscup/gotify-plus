@@ -14,6 +14,8 @@ import com.gotify.client.notification.GotifyNotificationManager
 import com.gotify.client.util.sanitized
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -29,29 +31,34 @@ class MessageIngestor @Inject constructor(
     private val prefs: PreferencesRepository
 ) {
 
-    suspend fun ingest(serverId: Long, message: GotifyMessage, notify: Boolean = true) {
-        val existing = messageDao.getMessageById(serverId, message.id)
-        messageDao.insertMessage(message.toEntity(serverId, existing?.isRead ?: false))
-        if (existing != null || !notify) return
+    // WebSocket, periodic sync and FCM-triggered sync can race on the same
+    // message; serialise the check-then-insert so it notifies at most once.
+    private val ingestLock = Mutex()
 
-        message.extras?.action?.onReceive?.intentUrl?.takeIf { it.isNotBlank() }?.let { intentUrl ->
-            // Server-supplied broadcasts are opt-in: a compromised server must not drive other apps by default.
-            if (prefs.userPreferences.first().serverIntentsEnabled) {
-                runCatching { Intent.parseUri(intentUrl, Intent.URI_INTENT_SCHEME) }
-                    .onSuccess { context.sendBroadcast(it.sanitized()) }
-                    .onFailure { Log.w(TAG, "Ignoring invalid onReceive intent") }
+    suspend fun ingest(serverId: Long, message: GotifyMessage, notify: Boolean = true) =
+        ingestLock.withLock {
+            val existing = messageDao.getMessageById(serverId, message.id)
+            messageDao.insertMessage(message.toEntity(serverId, existing?.isRead ?: false))
+            if (existing != null || !notify) return@withLock
+
+            message.extras?.action?.onReceive?.intentUrl?.takeIf { it.isNotBlank() }?.let { intentUrl ->
+                // Server-supplied broadcasts are opt-in: a compromised server must not drive other apps by default.
+                if (prefs.userPreferences.first().serverIntentsEnabled) {
+                    runCatching { Intent.parseUri(intentUrl, Intent.URI_INTENT_SCHEME) }
+                        .onSuccess { context.sendBroadcast(it.sanitized()) }
+                        .onFailure { Log.w(TAG, "Ignoring invalid onReceive intent") }
+                }
             }
-        }
 
-        val app = applicationDao.getApplicationById(serverId, message.appId)?.toDomain()
-        if (app != null) notifications.createAppChannels(serverId, app)
-        notifications.postMessageNotification(
-            message   = message,
-            app       = app,
-            tapIntent = detailTapIntent(serverId, message.id),
-            serverId  = serverId
-        )
-    }
+            val app = applicationDao.getApplicationById(serverId, message.appId)?.toDomain()
+            if (app != null) notifications.createAppChannels(serverId, app)
+            notifications.postMessageNotification(
+                message   = message,
+                app       = app,
+                tapIntent = detailTapIntent(serverId, message.id),
+                serverId  = serverId
+            )
+        }
 
     private fun detailTapIntent(serverId: Long, messageId: Long): PendingIntent {
         val intent = context.packageManager

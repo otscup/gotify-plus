@@ -9,7 +9,16 @@ plugins {
     alias(libs.plugins.room)
     // FCM: reads app/google-services.json (register com.gotify.client in the
     // Firebase console first; the file is intentionally not in the repo).
-    alias(libs.plugins.google.services)
+    // `apply false`: the plugin is applied below only when the file exists, so
+    // builds without Firebase config (local checkouts) still compile.
+    alias(libs.plugins.google.services) apply false
+}
+
+// google-services.json is git-ignored. Apply the Google Services plugin only
+// when it is present: CI restores it from the GOOGLE_SERVICES_JSON_BASE64 secret,
+// local builds read it from app/google-services.json when the user adds it.
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
 }
 
 android {
@@ -21,7 +30,8 @@ android {
         minSdk        = 26
         targetSdk     = 37
         // CI run number keeps every published release upgradable over the previous one.
-        versionCode   = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 1
+        // v1.1.0 on user devices is versionCode 5; never build below 6.
+        versionCode   = (System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 6).coerceAtLeast(6)
         versionName   = "1.1.0"
     }
 
