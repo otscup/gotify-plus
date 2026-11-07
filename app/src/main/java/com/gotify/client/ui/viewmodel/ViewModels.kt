@@ -23,6 +23,7 @@ import javax.inject.Inject
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import com.gotify.client.BuildConfig
 import com.gotify.client.notification.GotifyNotificationManager
+import com.gotify.client.service.FcmDeviceRegistration
 
 /** Resolve a user-facing error string in the language chosen in settings. */
 private fun localizedErr(context: Context, @StringRes id: Int, vararg args: Any): String =
@@ -88,6 +89,7 @@ class LoginViewModel @Inject constructor(
     private val serverManager: ServerManager,
     private val serverDao:     ServerDao,
     private val prefs:         PreferencesRepository,
+    private val fcmRegistration: FcmDeviceRegistration,
     @ApplicationContext private val appContext: Context
 ) : ViewModel() {
 
@@ -181,6 +183,9 @@ class LoginViewModel @Inject constructor(
         check(serverManager.addServer(server.copy(id = newId, isActive = true))) {
             "Unable to activate the saved server"
         }
+        // Best-effort FCM registration (registers when keep-alive is off);
+        // refresh() never throws, so login cannot fail on it.
+        fcmRegistration.refresh()
     }
 
     private fun validateServerUrl(raw: String): String? {
@@ -803,7 +808,8 @@ class SettingsViewModel @Inject constructor(
     private val serverDao:     ServerDao,
     private val messageDao:    MessageDao,
     private val applicationDao:ApplicationDao,
-    private val notifications: GotifyNotificationManager
+    private val notifications: GotifyNotificationManager,
+    private val fcmRegistration: FcmDeviceRegistration
 ) : ViewModel() {
 
     val settingsState: StateFlow<SettingsState> = combine(
@@ -838,7 +844,12 @@ class SettingsViewModel @Inject constructor(
     fun setThemeMode(mode: com.gotify.client.data.datastore.ThemeMode) = viewModelScope.launch { prefs.setThemeMode(mode) }
     fun setAppLanguage(lang: com.gotify.client.data.datastore.AppLanguage) = viewModelScope.launch { prefs.setAppLanguage(lang) }
     fun setMarkdown(v: Boolean)      = viewModelScope.launch { prefs.setMarkdownEnabled(v) }
-    fun setKeepAlive(v: Boolean)     = viewModelScope.launch { prefs.setKeepAliveEnabled(v) }
+    fun setKeepAlive(v: Boolean) = viewModelScope.launch {
+        prefs.setKeepAliveEnabled(v)
+        // Re-sync FCM registration with the new push mode: register when the
+        // switch is off (FCM is the push path), unregister when it is on.
+        fcmRegistration.refresh()
+    }
     fun setQuietHoursEnabled(v: Boolean) = viewModelScope.launch { prefs.setQuietHoursEnabled(v) }
     fun setQuietHours(start: Int, end: Int) = viewModelScope.launch { prefs.setQuietHours(start, end) }
     fun setAppLock(v: Boolean)       = viewModelScope.launch { prefs.setAppLockEnabled(v) }

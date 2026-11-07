@@ -149,3 +149,22 @@ interface ServerApi {
     @GET("health")
     suspend fun getHealth(): Response<HealthResponse>
 }
+
+
+
+/** FCM device registration on the Gotify server (gotify-cf). Auth is the
+ *  same client-token (X-Gotify-Key) scheme as the other APIs. The server
+ *  only ever sends a signal via FCM ({type:"gotify", messageId, appid});
+ *  message content is always pulled through MessageApi afterwards. */
+interface FcmApi {
+
+    @POST("fcm/device")
+    suspend fun registerDevice(
+        @Body request: FcmDeviceRegisterRequest
+    ): Response<Unit>
+
+    @DELETE("fcm/device")
+    suspend fun unregisterDevice(
+        @Query("token") token: String
+    ): Response<Unit>
+}

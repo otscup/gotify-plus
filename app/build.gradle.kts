@@ -7,6 +7,9 @@ plugins {
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
+    // FCM: reads app/google-services.json (register com.gotify.client in the
+    // Firebase console first; the file is intentionally not in the repo).
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -115,6 +118,12 @@ dependencies {
 
 
     implementation(libs.coroutines.android)
+    implementation(libs.coroutines.play.services)
+
+
+    // FCM push while keep-alive is off (firebase-bom manages the versions)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.messaging)
 
 
     implementation(libs.coil.compose)

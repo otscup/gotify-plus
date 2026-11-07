@@ -256,3 +256,17 @@ class UserRepository @Inject constructor(
     suspend fun deleteUser(userId: Int): ApiResult<Unit> =
         safeApiCallUnit { api.users.deleteUser(userId) }
 }
+
+
+
+/** FCM device registration against the Gotify server (gotify-cf). */
+class FcmRepository @Inject constructor(
+    private val api: GotifyApiClient
+) {
+
+    suspend fun registerDevice(request: FcmDeviceRegisterRequest): ApiResult<Unit> =
+        safeApiCallUnit { api.fcm.registerDevice(request) }
+
+    suspend fun unregisterDevice(token: String): ApiResult<Unit> =
+        safeApiCallUnit { api.fcm.unregisterDevice(token) }
+}

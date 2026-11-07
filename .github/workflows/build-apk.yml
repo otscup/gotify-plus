@@ -20,29 +20,29 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Generate signing keystore
-        run: |
-          keytool -genkeypair -keystore "$RUNNER_TEMP/release.keystore" -alias gotify \
-            -keyalg RSA -keysize 2048 -validity 10000 \
-            -storepass gotifyfork -keypass gotifyfork \
-            -dname "CN=GotifyPlus Fork, OU=otscup, O=otscup, C=CN"
+      # Same keystore as the v1.1.0 release (~/workspace/gotify-plus-build/release.keystore),
+      # stored as repo secrets so every build signs with the identical key and
+      # stays installable over the previous APK. Required secrets:
+      # ANDROID_KEYSTORE_BASE64 (base64 of the keystore file),
+      # ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD.
+      # Never generate a fresh keystore here: a new key breaks upgrades.
+      - name: Decode signing keystore
+        run: echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > "$RUNNER_TEMP/release.keystore"
 
       - name: Build signed release APK
         env:
           ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release.keystore
-          ANDROID_KEYSTORE_PASSWORD: gotifyfork
-          ANDROID_KEY_ALIAS: gotify
-          ANDROID_KEY_PASSWORD: gotifyfork
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: ./gradlew assembleRelease --no-daemon
+
+      - name: Remove keystore
+        if: always()
+        run: rm -f "$RUNNER_TEMP/release.keystore"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: gotify-plus-zh-apk
           path: app/build/outputs/apk/release/*.apk
-
-      - name: Upload signing keystore (save it to keep future upgrades installable)
-        uses: actions/upload-artifact@v4
-        with:
-          name: signing-keystore
-          path: ${{ runner.temp }}/release.keystore

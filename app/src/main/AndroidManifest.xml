@@ -70,6 +70,17 @@
             android:foregroundServiceType="remoteMessaging"
             android:stopWithTask="false" />
 
+        <!-- ── FCM push while keep-alive is off (signal only; content is pulled via API) ── -->
+
+        <service
+            android:name=".service.GotifyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <!-- ── Boot Receiver ──────────────────────────────────────────────── -->
 
         <receiver

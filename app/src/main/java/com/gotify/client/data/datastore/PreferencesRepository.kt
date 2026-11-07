@@ -76,6 +76,8 @@ class PreferencesRepository @Inject constructor(
         val APP_LANGUAGE           = stringPreferencesKey("app_language")
         val SERVER_INTENTS_ENABLED = booleanPreferencesKey("server_intents_enabled")
         val APP_MUTES              = stringSetPreferencesKey("app_mutes")
+        // FCM token currently registered with the server (null = not registered).
+        val FCM_TOKEN              = stringPreferencesKey("fcm_token")
     }
 
 
@@ -145,6 +147,20 @@ class PreferencesRepository @Inject constructor(
 
     suspend fun setServerIntentsEnabled(enabled: Boolean) =
         context.dataStore.edit { it[Keys.SERVER_INTENTS_ENABLED] = enabled }
+
+    /** FCM token currently registered with the server, if any. */
+    val fcmToken: Flow<String?> = context.dataStore.data
+        .catch { exception ->
+            if (exception is IOException) emit(emptyPreferences())
+            else throw exception
+        }
+        .map { prefs -> prefs[Keys.FCM_TOKEN] }
+
+    suspend fun setFcmToken(token: String?) =
+        context.dataStore.edit {
+            if (token == null) it.remove(Keys.FCM_TOKEN)
+            else it[Keys.FCM_TOKEN] = token
+        }
 
 
 

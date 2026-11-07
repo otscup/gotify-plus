@@ -19,6 +19,14 @@ data class LoginRequest(
     @SerializedName("name") val name: String
 )
 
+/** FCM device registration (POST /fcm/device, client-token auth). */
+data class FcmDeviceRegisterRequest(
+    @SerializedName("token")      val token: String,
+    @SerializedName("platform")   val platform: String = "android",
+    @SerializedName("deviceId")   val deviceId: String? = null,
+    @SerializedName("appVersion") val appVersion: String? = null
+)
+
 data class ClientResponse(
     @SerializedName("id")    val id: Int,
     @SerializedName("name")  val name: String,
