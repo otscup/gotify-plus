@@ -78,7 +78,23 @@ class SyncJobService : JobService() {
 
     companion object {
         private const val JOB_ID = 4201
+        private const val FCM_JOB_ID = 4202
         private const val INTERVAL_MS = 15 * 60 * 1000L
+
+        /**
+         * One-shot catch-up for an FCM signal. FirebaseMessagingService is
+         * torn down as soon as onMessageReceived returns, so the pull must not
+         * run in that service's coroutine scope; the system keeps the process
+         * alive while this job is executing.
+         */
+        fun scheduleImmediate(context: Context) {
+            context.getSystemService(JobScheduler::class.java).schedule(
+                JobInfo.Builder(FCM_JOB_ID, ComponentName(context, SyncJobService::class.java))
+                    .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
+                    .setOverrideDeadline(0)
+                    .build()
+            )
+        }
 
         fun schedule(context: Context) {
             val scheduler = context.getSystemService(JobScheduler::class.java)
