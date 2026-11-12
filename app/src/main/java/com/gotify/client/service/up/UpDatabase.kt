@@ -2,12 +2,13 @@ package com.gotify.client.service.up
 
 import android.content.Context
 import android.util.Log
-import androidx.work.CoroutineWorker
+import androidx.work.Worker
 import androidx.work.WorkerParameters
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.runBlocking
 import org.unifiedpush.android.distributor.Database
 import org.unifiedpush.android.distributor.RegistrationCounter
 import org.unifiedpush.android.distributor.WorkerCompanion
@@ -64,14 +65,19 @@ object UpWorkerCompanion : WorkerCompanion(UpWorker::class.java) {
  * server queued while this device was unreachable and forward it. Never
  * retries: a failed pull leaves the rows on the server, and the next
  * websocket connect / FCM wake-up pulls again.
+ *
+ * Must extend [Worker] (not CoroutineWorker): the library's WorkerCompanion
+ * takes a `Class<out Worker>`, and CoroutineWorker is a ListenableWorker,
+ * not a Worker subclass. doWork() runs on a background thread, so
+ * runBlocking is fine here.
  */
-class UpWorker(appContext: Context, params: WorkerParameters) : CoroutineWorker(appContext, params) {
-    override suspend fun doWork(): Result {
+class UpWorker(appContext: Context, params: WorkerParameters) : Worker(appContext, params) {
+    override fun doWork(): Result {
         return try {
             val entryPoint = EntryPointAccessors.fromApplication(
                 applicationContext, UnifiedPushEntryPoint::class.java
             )
-            entryPoint.unifiedPushForwarder().pullPendingForActiveServer()
+            runBlocking { entryPoint.unifiedPushForwarder().pullPendingForActiveServer() }
             Result.success()
         } catch (e: Exception) {
             Log.w(TAG, "UP pending pull failed", e)

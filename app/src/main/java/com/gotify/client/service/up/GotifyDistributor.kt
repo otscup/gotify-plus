@@ -23,7 +23,7 @@ import javax.inject.Singleton
 private const val TAG = "UpDistributor"
 
 /**
- * UnifiedPush distributor backed by gotify-cf (/up/* endpoints).
+ * UnifiedPush distributor backed by gotify-cf (/up/… endpoints).
  *
  * - Register: POST /up/register with the requesting app's package name as
  *   `target`; the returned endpoint URL is handed to the app by the
