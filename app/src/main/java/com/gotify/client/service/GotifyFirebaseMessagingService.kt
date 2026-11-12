@@ -32,11 +32,12 @@ class GotifyFirebaseMessagingService : FirebaseMessagingService() {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
     override fun onMessageReceived(message: RemoteMessage) {
-        // Signal-only payload; content is fetched by the sync job below.
-        // Ignore anything that is not a gotify signal to stay robust against
-        // misrouted pushes.
+        // Signal-only payloads; content is fetched by the sync job below.
+        // "gotify" pulls new Gotify messages; "unifiedpush" pulls queued
+        // UnifiedPush payloads via the same job (see SyncJobService).
+        // Anything else is ignored to stay robust against misrouted pushes.
         val type = message.data["type"]
-        if (type != null && type != "gotify") {
+        if (type != null && type != "gotify" && type != "unifiedpush") {
             Log.d(TAG, "Ignoring non-gotify FCM message")
             return
         }

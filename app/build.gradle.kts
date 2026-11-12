@@ -145,6 +145,12 @@ dependencies {
     implementation(libs.datastore.preferences)
 
 
+    // UnifiedPush distributor: this app acts as the push distributor for
+    // other apps (e.g. Nagram); the server side is gotify-cf (/up/*).
+    implementation(libs.unifiedpush.distributor)
+    implementation(libs.work.runtime.ktx)
+
+
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     testImplementation(libs.junit)

@@ -27,6 +27,29 @@ data class FcmDeviceRegisterRequest(
     @SerializedName("appVersion") val appVersion: String? = null
 )
 
+/** UnifiedPush endpoint registration (POST /up/register, client-token auth).
+ *  `target` is the registering app's package name; the server returns the
+ *  endpoint URL that app servers POST encrypted payloads to. */
+data class UpRegisterRequest(
+    @SerializedName("target") val target: String
+)
+
+data class UpRegisterResponse(
+    @SerializedName("endpoint") val endpoint: String
+)
+
+/** One queued UnifiedPush payload (GET /up/pending). `endpoint` is the
+ *  endpoint token (not the full URL); `payload` is base64 WebPush ciphertext.
+ *  The server deletes returned rows, so pull only when ready to forward. */
+data class UpPendingMessage(
+    @SerializedName("endpoint") val endpoint: String,
+    @SerializedName("payload")  val payload: String
+)
+
+data class UpPendingResponse(
+    @SerializedName("messages") val messages: List<UpPendingMessage> = emptyList()
+)
+
 data class ClientResponse(
     @SerializedName("id")    val id: Int,
     @SerializedName("name")  val name: String,

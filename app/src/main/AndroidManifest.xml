@@ -61,6 +61,20 @@
             </intent-filter>
         </activity>
 
+        <!-- ── UnifiedPush distributor: other apps (e.g. Nagram) register here
+             for push. Exported: the connector library's REGISTER/UNREGISTER
+             broadcasts arrive from those apps. ── -->
+
+        <receiver
+            android:name=".service.up.UpDistributorReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.unifiedpush.android.distributor.REGISTER" />
+                <action android:name="org.unifiedpush.android.distributor.UNREGISTER" />
+            </intent-filter>
+        </receiver>
+
         <!-- ── Background Service ─────────────────────────────────────────── -->
 
         <service

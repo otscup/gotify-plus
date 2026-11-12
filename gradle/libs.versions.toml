@@ -35,6 +35,11 @@ junit                = "4.13.2"
 google-services      = "4.5.0"
 firebase-bom         = "35.1.0"
 
+# UnifiedPush distributor (this app acts as the push distributor for other
+# apps, e.g. Nagram; server side is gotify-cf /up/* endpoints)
+unifiedpush-distributor = "0.7.6"
+work-runtime         = "2.11.2"
+
 # Image loading
 coil                 = "2.7.0"
 
@@ -90,6 +95,12 @@ junit                = { group = "junit",                      name = "junit",  
 # Firebase (FCM): versions managed by firebase-bom; google-services plugin reads google-services.json
 firebase-bom         = { group = "com.google.firebase",        name = "firebase-bom",                version.ref = "firebase-bom" }
 firebase-messaging   = { group = "com.google.firebase",        name = "firebase-messaging" }
+
+# UnifiedPush distributor (org.unifiedpush.android:distributor). work-runtime
+# is a transitive dep of the distributor lib; declared explicitly because
+# the distributor's RegistrationCounter needs a Worker subclass.
+unifiedpush-distributor = { group = "org.unifiedpush.android", name = "distributor",                 version.ref = "unifiedpush-distributor" }
+work-runtime-ktx     = { group = "androidx.work",              name = "work-runtime-ktx",            version.ref = "work-runtime" }
 
 # Image loading
 coil-compose         = { group = "io.coil-kt",                 name = "coil-compose",                version.ref = "coil" }

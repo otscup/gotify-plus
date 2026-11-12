@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.gotify.client.data.api.GotifyWebSocketManager
 import com.gotify.client.data.repository.*
+import com.gotify.client.service.up.UnifiedPushForwarder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,8 +23,11 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideWebSocketManager(gson: Gson): GotifyWebSocketManager =
-        GotifyWebSocketManager(gson)
+    fun provideWebSocketManager(
+        gson: Gson,
+        unifiedPushForwarder: UnifiedPushForwarder
+    ): GotifyWebSocketManager =
+        GotifyWebSocketManager(gson, unifiedPushForwarder)
 
     @Provides
     @Singleton

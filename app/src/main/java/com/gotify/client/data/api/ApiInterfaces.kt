@@ -168,3 +168,23 @@ interface FcmApi {
         @Query("token") token: String
     ): Response<Unit>
 }
+
+/** UnifiedPush distributor endpoints on the Gotify server (gotify-cf).
+ *  Auth is the same client-token (X-Gotify-Key) scheme as the other APIs.
+ *  Payloads are WebPush-encrypted end to end; the server only ever sees
+ *  ciphertext, and this client only forwards it to the registered app. */
+interface UnifiedPushApi {
+
+    @POST("up/register")
+    suspend fun registerEndpoint(
+        @Body request: UpRegisterRequest
+    ): Response<UpRegisterResponse>
+
+    @DELETE("up/{token}")
+    suspend fun unregisterEndpoint(
+        @Path("token") token: String
+    ): Response<Unit>
+
+    @GET("up/pending")
+    suspend fun getPending(): Response<UpPendingResponse>
+}

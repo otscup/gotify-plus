@@ -270,3 +270,19 @@ class FcmRepository @Inject constructor(
     suspend fun unregisterDevice(token: String): ApiResult<Unit> =
         safeApiCallUnit { api.fcm.unregisterDevice(token) }
 }
+
+/** UnifiedPush endpoint registration / pending pull against gotify-cf.
+ *  Payloads are opaque WebPush ciphertext; this repository never decrypts. */
+class UnifiedPushRepository @Inject constructor(
+    private val api: GotifyApiClient
+) {
+
+    suspend fun registerEndpoint(request: UpRegisterRequest): ApiResult<UpRegisterResponse> =
+        safeApiCall { api.up.registerEndpoint(request) }
+
+    suspend fun unregisterEndpoint(token: String): ApiResult<Unit> =
+        safeApiCallUnit { api.up.unregisterEndpoint(token) }
+
+    suspend fun getPending(): ApiResult<UpPendingResponse> =
+        safeApiCall { api.up.getPending() }
+}

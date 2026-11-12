@@ -2,8 +2,10 @@ package com.gotify.client.data.api
 
 import android.util.Log
 import com.google.gson.Gson
+import com.google.gson.JsonObject
 import com.gotify.client.data.model.GotifyMessage
 import com.gotify.client.data.model.StreamState
+import com.gotify.client.service.up.UnifiedPushForwarder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -34,7 +36,8 @@ private const val RETRY_MAX_DELAY_MS  = 60_000L
 
 
 class GotifyWebSocketManager @Inject constructor(
-    private val gson: Gson
+    private val gson: Gson,
+    private val unifiedPushForwarder: UnifiedPushForwarder
 ) {
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
@@ -167,10 +170,19 @@ class GotifyWebSocketManager @Inject constructor(
             cancelRetry()
             retryAttempt = 0
             emit(StreamState.Connected)
+            // Anything the server queued while the socket was down is pulled
+            // here; the FCM wake-up path pulls the same queue via SyncJobService.
+            scope.launch {
+                runCatching { unifiedPushForwarder.pullPendingForActiveServer() }
+                    .onFailure { Log.w(TAG, "UP pending pull on connect failed", it) }
+            }
         }
 
         override fun onMessage(webSocket: WebSocket, text: String) {
             if (this@GotifyWebSocketManager.webSocket !== webSocket) return
+            // UnifiedPush frames share this socket but are not Gotify messages:
+            // route them to the distributor instead of the message ingestor.
+            if (tryHandleUnifiedPushFrame(text)) return
             try {
                 val message = gson.fromJson(text, GotifyMessage::class.java)
                 Log.d(TAG, "Message received: id=${message.id} appId=${message.appId}")
@@ -178,6 +190,28 @@ class GotifyWebSocketManager @Inject constructor(
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to parse WebSocket message", e)
             }
+        }
+
+        /**
+         * Returns true when [text] is a UnifiedPush frame
+         * {"type":"unifiedpush","payload":"<base64>"} (already forwarded).
+         * Gotify messages carry no "type" field, so this never misfires.
+         * A malformed UP frame is swallowed (true) so it never reaches the
+         * Gotify parser; any other frame returns false.
+         */
+        private fun tryHandleUnifiedPushFrame(text: String): Boolean {
+            val obj = runCatching { gson.fromJson(text, JsonObject::class.java) }.getOrNull()
+                ?: return false
+            val isUp = runCatching { obj.get("type")?.asString == "unifiedpush" }.getOrDefault(false)
+            if (!isUp) return false
+            val payload = runCatching { obj.get("payload")?.asString }.getOrNull()
+            if (payload.isNullOrBlank()) {
+                Log.w(TAG, "UnifiedPush frame without payload")
+                return true
+            }
+            Log.d(TAG, "UnifiedPush frame received (${payload.length} chars base64)")
+            unifiedPushForwarder.forwardLive(payload)
+            return true
         }
 
         override fun onFailure(webSocket: WebSocket, t: Throwable, response: Response?) {

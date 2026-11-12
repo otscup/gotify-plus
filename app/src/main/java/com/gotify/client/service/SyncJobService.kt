@@ -15,6 +15,7 @@ import com.gotify.client.data.db.ServerDao
 import com.gotify.client.data.db.toDomain
 import com.gotify.client.data.model.ApiResult
 import com.gotify.client.data.repository.MessageRepository
+import com.gotify.client.service.up.UnifiedPushForwarder
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -37,6 +38,7 @@ class SyncJobService : JobService() {
     @Inject lateinit var serverDao: ServerDao
     @Inject lateinit var messageDao: MessageDao
     @Inject lateinit var ingestor: MessageIngestor
+    @Inject lateinit var unifiedPushForwarder: UnifiedPushForwarder
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
@@ -74,6 +76,13 @@ class SyncJobService : JobService() {
             .filter { it.id > lastKnownId }
             .sortedBy { it.id }
             .forEach { ingestor.ingest(server.id, it, notify) }
+
+        // UnifiedPush: pull payloads the server queued while the socket was
+        // down (the FCM wake-up signal carries no content). Best-effort;
+        // never fails the sync. In keep-alive mode this job does not run —
+        // the websocket reconnect pulls the same queue instead.
+        runCatching { unifiedPushForwarder.pullPendingForActiveServer() }
+            .onFailure { Log.w(TAG, "UP pending pull failed", it) }
     }
 
     companion object {

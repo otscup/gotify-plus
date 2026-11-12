@@ -86,7 +86,8 @@ object NetworkClientFactory {
             applications = retrofit.create(ApplicationApi::class.java),
             users       = retrofit.create(UserApi::class.java),
             server      = retrofit.create(ServerApi::class.java),
-            fcm         = retrofit.create(FcmApi::class.java)
+            fcm         = retrofit.create(FcmApi::class.java),
+            up          = retrofit.create(UnifiedPushApi::class.java)
         )
     }
 
@@ -123,5 +124,6 @@ data class GotifyApiClient(
     val applications: ApplicationApi,
     val users:        UserApi,
     val server:       ServerApi,
-    val fcm:          FcmApi
+    val fcm:          FcmApi,
+    val up:           UnifiedPushApi
 )
