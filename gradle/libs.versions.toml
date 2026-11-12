@@ -37,8 +37,13 @@ firebase-bom         = "35.1.0"
 
 # UnifiedPush distributor (this app acts as the push distributor for other
 # apps, e.g. Nagram; server side is gotify-cf /up/* endpoints)
-unifiedpush-distributor = "0.7.6"
-work-runtime         = "2.11.2"
+# 0.7.5, NOT 0.7.6: 0.7.6 was built with Kotlin 2.4 (metadata mv 2.4.0),
+# which this project's Kotlin 2.3.20 + KSP 2.3.2 cannot read (KSP fails
+# with "GotifyDistributor could not be resolved"). 0.7.5 has byte-identical
+# API sources and Kotlin 2.2 metadata. Do not upgrade past 0.7.5 until
+# the project moves to Kotlin 2.4 (which needs a KSP release for 2.4).
+unifiedpush-distributor = "0.7.5"
+work-runtime         = "2.11.0"
 
 # Image loading
 coil                 = "2.7.0"
